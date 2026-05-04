@@ -1,0 +1,19 @@
+{
+  "title": "Modular Field Manual",
+  "tagline": "Reference documentation for Eurorack modules",
+  "description": "Unofficial, community-maintained reference manuals for Eurorack modules — controls, patching, modes, and tips.",
+  "categories": [
+    { "id": "sound-source", "label": "Sound Sources" },
+    { "id": "modulation", "label": "Modulation & Function" },
+    { "id": "processor", "label": "Processors & Effects" },
+    { "id": "utility", "label": "Utility" }
+  ],
+  "sections": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "panel", "label": "Panel & I/O" },
+    { "id": "modes", "label": "Modes" },
+    { "id": "patching", "label": "Patch Recipes" },
+    { "id": "specs", "label": "Specifications" },
+    { "id": "tips", "label": "Tips & Tricks" }
+  ]
+}

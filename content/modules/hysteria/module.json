@@ -1,0 +1,15 @@
+{
+  "slug": "hysteria",
+  "name": "HYSTERIA",
+  "subtitle": "Performance VCO with Quantizer",
+  "category": "sound-source",
+  "hp": 10,
+  "manufacturer": "Dreadbox",
+  "released": "2020",
+  "inspiration": null,
+  "tags": ["vco", "analog", "oscillator", "quantizer", "waveshaper", "sync"],
+  "summary": "Full analog voltage-controlled oscillator with a variable waveshaper, voltage-controlled quantizer, hard sync, and dedicated pulse output. Covers 16 Hz to 32 kHz across 7 waveforms in a slim 10 HP package.",
+  "color_accent": "#d4556b",
+  "panel_color": "#1a1a1a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

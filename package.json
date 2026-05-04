@@ -1,0 +1,17 @@
+{
+  "name": "eurorack-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "scripts/build.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "python3 -m http.server 4321 --directory public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "marked": "^18.0.3"
+  }
+}
