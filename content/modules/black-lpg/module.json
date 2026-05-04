@@ -1,0 +1,15 @@
+{
+  "slug": "black-lpg",
+  "name": "BLACK LPG",
+  "subtitle": "Vactrol Low-Pass Gate",
+  "category": "processor",
+  "hp": 10,
+  "manufacturer": "Erica Synths",
+  "released": "2021",
+  "inspiration": null,
+  "tags": ["lpg", "vactrol", "vcf", "vca", "envelope", "resonance", "analog"],
+  "summary": "Second-order vactrol low-pass gate combining a resonant VCF and VCA with switchable modes, resonance overdrive, and a built-in decay envelope generator with CV output.",
+  "color_accent": "#e04040",
+  "panel_color": "#0a0a0a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
