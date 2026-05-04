@@ -1,0 +1,15 @@
+{
+  "slug": "black-eg2",
+  "name": "BLACK EG2",
+  "subtitle": "Dual Looping ADSR Envelope Generator",
+  "category": "modulation",
+  "hp": 8,
+  "manufacturer": "Erica Synths",
+  "released": "2023",
+  "inspiration": null,
+  "tags": ["envelope", "adsr", "dual", "looping", "lfo", "gate-length", "analog"],
+  "summary": "Dual re-triggerable exponential ADSR envelope generator with adjustable gate length, CV-controlled gate time, and full ADSR looping mode. Generates complete envelopes from short triggers without an external gate source.",
+  "color_accent": "#e04040",
+  "panel_color": "#0a0a0a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
