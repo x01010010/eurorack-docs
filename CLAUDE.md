@@ -40,4 +40,14 @@ Create `content/modules/<slug>/` with a `module.json` and one `.md` file per sec
 
 ### Client-Side Features
 
-`public-static/app.js` provides theme toggling (dark/light) and client-side search against the generated `search-index.json`.
+`public-static/app.js` provides:
+- **Theme toggle** — dark/light, stored in `localStorage`
+- **Search** — against `search-index.json`; scores title ×10, tag hits ×6, manufacturer +8, body ×1; top 8 results shown
+- **Manufacturer filter** — pill buttons on the index page, one per unique `manufacturer` value across all modules
+- **Tag filter** — tag pills on index cards are `<button>` elements; clicking one filters to modules sharing that tag. Tag and manufacturer filters combine with AND logic.
+
+### module.json — tags and filtering
+
+`tags` values must be **hyphenated lowercase with no spaces** (e.g. `"self-oscillating"`, `"ring-modulator"`). Tags are rendered as interactive filter buttons on the index page and are included in search scoring. Tags on module detail pages are plain text only.
+
+The `manufacturer` field drives the manufacturer filter pills. Both `manufacturer` and `tags` are included in `search-index.json` so they are searchable directly.
