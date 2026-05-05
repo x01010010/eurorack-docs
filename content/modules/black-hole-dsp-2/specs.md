@@ -19,7 +19,7 @@
 | Parameter | Value |
 | --- | --- |
 | DSP chip | Spin Semiconductor FV-1 |
-| Factory programs | 8 |
-| User program slots | 8 |
+| Factory programs | 16 |
+| User program slots | 16 |
 | I/O | Stereo in / stereo out |
 | Sample rate | 32 kHz (FV-1 native) |

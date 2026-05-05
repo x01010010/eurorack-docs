@@ -1,0 +1,40 @@
+# Modes
+
+## Factory Programs (slots 1–16)
+
+The sixteen factory programs cover a wide range of FV-1 effect types. Parameter meanings (P1–P3) vary per program — consult the Erica Synths documentation or panel overlay for the exact mapping of each slot.
+
+| Slot | Effect type | Typical parameters |
+| --- | --- | --- |
+| 1 | Small room reverb | Size, damping, mix |
+| 2 | Large hall reverb | Decay, tone, mix |
+| 3 | Plate reverb | Decay, pre-delay, mix |
+| 4 | Spring reverb | Tension, decay, mix |
+| 5 | Shimmer reverb | Decay, pitch shift, mix |
+| 6 | Gated reverb | Gate threshold, decay, mix |
+| 7 | Echo / delay | Time, feedback, mix |
+| 8 | Ping-pong delay | Time, feedback, mix |
+| 9 | Modulated delay | Time, modulation depth, mix |
+| 10 | Chorus | Rate, depth, mix |
+| 11 | Flanger | Rate, depth, feedback |
+| 12 | Phaser | Rate, depth, feedback |
+| 13 | Pitch shifter | Shift amount, mix, — |
+| 14 | Tremolo | Rate, depth, mix |
+| 15 | Resonator | Frequency, decay, mix |
+| 16 | Combination effect | — |
+
+*Note: exact program names and parameter assignments may vary between firmware versions. Verify against the panel silkscreen or the shipped documentation.*
+
+## User Programs (slots 17–32)
+
+Sixteen additional slots accept custom FV-1 assembly programs. Programs are uploaded via the PROG jack using a compatible programmer (e.g. the Erica Synths FV-1 programmer or a suitable DIY tool). Once uploaded, user programs behave identically to factory programs — PROGRAM knob selects them, P1–P3 control their parameters.
+
+## Stereo and Mono Operation
+
+- **Stereo**: patch separate signals to IN L and IN R.
+- **Mono in**: patch a single signal to IN L; IN R normalls to IN L so both DSP channels receive the same input. The output remains stereo (the effect creates width from a mono source).
+- **Mono out**: take only OUT L if a mono output is needed.
+
+## DRY/WET
+
+At fully CCW the output is dry (unprocessed). At fully CW the output is 100% wet. Mid-position blends both. For a parallel send/return setup, set DRY/WET to fully wet and control the blend at the mixer.
