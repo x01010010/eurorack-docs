@@ -1,0 +1,14 @@
+{
+  "slug": "blue-lantern-sg",
+  "name": "SG",
+  "subtitle": "Subharmonics Generator",
+  "category": "utility",
+  "hp": 4,
+  "manufacturer": "Blue Lantern",
+  "released": "2020",
+  "tags": ["sub-oscillator", "harmonics", "utility", "vco-addon", "analog", "divider"],
+  "summary": "A 4 HP analog sub-harmonic generator. Feed any waveform from a VCO — saw, square, triangle, or sine — and four knobs mix in four individually divided sub-harmonics: a seventh down, a seventh an octave down, one octave down, and two octaves down. Built around a CD4013 flip-flop IC for zero-latency analog division, no microcontroller. Pairs with a mixer to blend the sub layers with the original VCO output.",
+  "color_accent": "#3a5fa8",
+  "panel_color": "#1a1a1a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

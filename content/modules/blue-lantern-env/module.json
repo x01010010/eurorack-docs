@@ -1,0 +1,14 @@
+{
+  "slug": "blue-lantern-env",
+  "name": "ENV",
+  "subtitle": "Digital ADSR Envelope Generator",
+  "category": "modulation",
+  "hp": 8,
+  "manufacturer": "Blue Lantern",
+  "released": "2020",
+  "tags": ["envelope", "adsr", "lfo", "looping", "digital"],
+  "summary": "An 8 HP digital ADSR envelope generator with six control stages (Attack, Decay, Sustain, Release, Time, and output Level), two simultaneous envelope outputs, separate Gate and Trigger inputs, and selectable Linear/Exponential response. A three-way mode switch enables single-pass, Gated looping, or free-running Loop mode. A Punch switch adds transient snap to the attack. In Loop mode the output becomes an audio-rate LFO.",
+  "color_accent": "#3a5fa8",
+  "panel_color": "#1a1a1a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
