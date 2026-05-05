@@ -543,8 +543,8 @@ body {
   box-shadow: var(--shadow-md);
 }
 .module-graphic svg { width: 100%; height: auto; }
-.module-graphic--photo { padding: 0; overflow: hidden; }
-.module-graphic--photo img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); object-fit: cover; }
+.module-graphic--photo { padding: 0; background: transparent; border: none; box-shadow: none; }
+.module-graphic--photo img { display: block; width: 100%; height: auto; max-height: 320px; object-fit: contain; border-radius: var(--radius-md); }
 
 .module-mini-hero { padding-bottom: var(--space-4); margin-bottom: var(--space-6); }
 

@@ -1,0 +1,30 @@
+{
+  "slug": "behringer-system-100-297",
+  "name": "297",
+  "subtitle": "Dual Portamento / CV Mixer (System 100)",
+  "category": "utility",
+  "hp": 16,
+  "manufacturer": "Behringer",
+  "released": "2020",
+  "inspiration": "Roland System 100M model 297",
+  "tags": [
+    "slew",
+    "portamento",
+    "cv-mixer",
+    "dual",
+    "utility",
+    "system-100"
+  ],
+  "summary": "Dual portamento/slew controller with independent rise and fall times for each channel, plus two independent two-input CV mixers with attenuators. A compact utility hub for smoothing pitch CV and summing control signals.",
+  "color_accent": "#7ab8d4",
+  "panel_color": "#111418",
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 25772
+}
