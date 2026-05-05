@@ -186,32 +186,61 @@ const style = document.createElement('style');
 style.textContent = `.search-results mark { background: color-mix(in oklab, var(--color-primary) 30%, transparent); color: var(--color-text); padding: 0 2px; border-radius: 2px; }`;
 document.head.appendChild(style);
 
-// --- Manufacturer filter bar (index page only) ---
+// --- Filter bar (index page only) ---
 (function () {
   const bar = document.querySelector('[data-filter-bar]');
   if (!bar) return;
 
-  const pills = bar.querySelectorAll('.filter-pill');
-  const cards = document.querySelectorAll('.module-card');
-  const sections = document.querySelectorAll('.cat-section');
-  let current = '';
+  const mfrPills = Array.from(bar.querySelectorAll('.filter-pill'));
+  const cards = Array.from(document.querySelectorAll('.module-card'));
+  const sections = Array.from(document.querySelectorAll('.cat-section'));
+  let currentMfr = '';
+  let currentTag = '';
 
   function apply() {
     cards.forEach((card) => {
-      const match = !current || card.dataset.manufacturer === current;
-      card.hidden = !match;
+      const mfrOk = !currentMfr || card.dataset.manufacturer === currentMfr;
+      const tagOk = !currentTag || card.dataset.tags.split(' ').includes(currentTag);
+      card.hidden = !(mfrOk && tagOk);
     });
-    // Hide category sections that have no visible cards
     sections.forEach((sec) => {
-      const anyVisible = Array.from(sec.querySelectorAll('.module-card')).some((c) => !c.hidden);
-      sec.hidden = !anyVisible;
+      sec.hidden = !sec.querySelectorAll('.module-card:not([hidden])').length;
     });
   }
 
-  pills.forEach((pill) => {
+  function clearTagHighlight() {
+    document.querySelectorAll('.tag-filter-btn.active').forEach((b) => b.classList.remove('active'));
+  }
+
+  // Manufacturer pills
+  mfrPills.forEach((pill) => {
     pill.addEventListener('click', () => {
-      current = pill.dataset.filter;
-      pills.forEach((p) => p.classList.toggle('active', p === pill));
+      currentMfr = pill.dataset.filter;
+      currentTag = '';
+      clearTagHighlight();
+      mfrPills.forEach((p) => p.classList.toggle('active', p === pill));
+      apply();
+    });
+  });
+
+  // Tag buttons (inside cards) — stop propagation so the card link doesn't fire
+  document.querySelectorAll('.tag-filter-btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const tag = btn.dataset.tag;
+      if (currentTag === tag) {
+        // Toggle off
+        currentTag = '';
+        btn.classList.remove('active');
+      } else {
+        clearTagHighlight();
+        currentTag = tag;
+        btn.classList.add('active');
+        // Reset manufacturer to All
+        currentMfr = '';
+        mfrPills.forEach((p) => p.classList.toggle('active', p.dataset.filter === ''));
+      }
       apply();
     });
   });

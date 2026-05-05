@@ -218,10 +218,12 @@ function moduleSectionTabs(mod, activeSection) {
   </nav>`;
 }
 
-function tagsHtml(tags = []) {
+function tagsHtml(tags = [], filterable = false) {
   if (!tags.length) return '';
   return `<ul class="tags" role="list">${tags
-    .map((t) => `<li>${escapeHtml(t)}</li>`)
+    .map((t) => filterable
+      ? `<li><button class="tag-filter-btn" type="button" data-tag="${escapeHtml(t)}">${escapeHtml(t)}</button></li>`
+      : `<li>${escapeHtml(t)}</li>`)
     .join('')}</ul>`;
 }
 
@@ -381,7 +383,7 @@ function renderIndex() {
                   </header>
                   <p class="card-subtitle">${escapeHtml(m.subtitle)}</p>
                   <p class="card-summary">${escapeHtml(m.summary)}</p>
-                  ${tagsHtml(m.tags)}
+                  ${tagsHtml(m.tags, true)}
                 </a>
               </li>`;
             })
