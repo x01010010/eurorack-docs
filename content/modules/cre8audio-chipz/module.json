@@ -5,6 +5,7 @@
   "category": "sound-source",
   "hp": 12,
   "manufacturer": "Cre8audio",
+  "inspiration": null,
   "released": "2019",
   "tags": [
     "oscillator",
@@ -16,7 +17,7 @@
     "filter",
     "waveshaper"
   ],
-  "summary": "A 12 HP dual VCO and dual LFO module inspired by the lo-fi character of classic game consoles. Each oscillator offers five morphable waveforms — Chip1 has an integrated filter, Chip2 has voltage-controlled pulse width. The dual LFO outputs two rates simultaneously (LFO2 runs 4× faster than LFO1), designed to pair with the Cellz touchpad sequencer.",
+  "summary": "A 12 HP dual VCO and dual LFO module inspired by the lo-fi character of classic game consoles. Each oscillator offers five morphable waveforms \u2014 Chip1 has an integrated filter, Chip2 has voltage-controlled pulse width. The dual LFO outputs two rates simultaneously (LFO2 runs 4\u00d7 faster than LFO1), designed to pair with the Cellz touchpad sequencer.",
   "color_accent": "#e05020",
   "panel_color": "#1a1a1a",
   "sections": [

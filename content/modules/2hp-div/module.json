@@ -5,6 +5,8 @@
   "category": "utility",
   "hp": 2,
   "manufacturer": "2hp",
+  "released": 2016,
+  "inspiration": null,
   "tags": [
     "clock",
     "divider",

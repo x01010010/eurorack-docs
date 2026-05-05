@@ -5,6 +5,7 @@
   "category": "utility",
   "hp": 10,
   "manufacturer": "Dreadbox",
+  "inspiration": null,
   "released": "2019",
   "tags": [
     "attenuverter",
@@ -14,7 +15,7 @@
     "offset",
     "utility"
   ],
-  "summary": "Multipurpose CV and audio utility in 10 HP. Four attenuverters, a ±10 V offset generator, a 4-to-3 mixer that doubles as a buffered splitter, a voltage-controlled LFO ranging from 30 seconds to 440 Hz, and a Pulserizer effect that distorts signals into square waves.",
+  "summary": "Multipurpose CV and audio utility in 10 HP. Four attenuverters, a \u00b110 V offset generator, a 4-to-3 mixer that doubles as a buffered splitter, a voltage-controlled LFO ranging from 30 seconds to 440 Hz, and a Pulserizer effect that distorts signals into square waves.",
   "color_accent": "#e07a20",
   "panel_color": "#1a1a1a",
   "sections": [

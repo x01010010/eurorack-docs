@@ -5,6 +5,7 @@
   "category": "sequencer",
   "hp": 12,
   "manufacturer": "Cre8audio",
+  "inspiration": null,
   "released": "2019",
   "tags": [
     "sequencer",
@@ -13,7 +14,7 @@
     "cv-generator",
     "quantizer"
   ],
-  "summary": "A 12 HP programmable CV touch pad with 16 capacitive pads arranged in a 4×4 grid. Each pad stores two independent 12-bit CV values (0–10 V), with selectable semi-tone quantized or free-scale modes. Touch a pad to output its stored values; touch multiple pads to arpeggiate. Two LFO trigger inputs allow automatic cycling through the pads, designed to pair with the Chipz LFO outputs.",
+  "summary": "A 12 HP programmable CV touch pad with 16 capacitive pads arranged in a 4\u00d74 grid. Each pad stores two independent 12-bit CV values (0\u201310 V), with selectable semi-tone quantized or free-scale modes. Touch a pad to output its stored values; touch multiple pads to arpeggiate. Two LFO trigger inputs allow automatic cycling through the pads, designed to pair with the Chipz LFO outputs.",
   "color_accent": "#e05020",
   "panel_color": "#1a1a1a",
   "sections": [

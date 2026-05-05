@@ -5,10 +5,11 @@
   "category": "processor",
   "hp": 10,
   "manufacturer": "Dreadbox",
+  "inspiration": null,
   "released": "2019",
   "tags": [
     "delay",
-    "echo",
+    "bbd",
     "lfo",
     "feedback",
     "stereo-outs"
