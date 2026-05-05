@@ -269,7 +269,7 @@ document.head.appendChild(style);
     const host = img.closest('.panel-content-media');
     if (!host) return;
 
-    const zoom = 1.5;
+    const zoom = 1.25;
     const lens = document.createElement('div');
     lens.className = 'panel-image-magnifier';
     lens.setAttribute('aria-hidden', 'true');
