@@ -41,7 +41,8 @@
   async function loadIndex() {
     if (docs) return docs;
     try {
-      const res = await fetch('/search-index.json');
+      const basePath = document.documentElement.dataset.basePath || '';
+      const res = await fetch(`${basePath}/search-index.json`);
       docs = await res.json();
     } catch (e) {
       docs = [];

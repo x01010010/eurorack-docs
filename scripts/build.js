@@ -19,6 +19,16 @@ const ROOT = path.resolve(__dirname, '..');
 const CONTENT = path.join(ROOT, 'content');
 const PUBLIC = path.join(ROOT, 'public');
 
+function normalizeBasePath(basePath = '') {
+  const raw = String(basePath).trim();
+  if (!raw || raw === '/') return '';
+  const withLeadingSlash = raw.startsWith('/') ? raw : `/${raw}`;
+  return withLeadingSlash.replace(/\/+$/, '');
+}
+
+const BASE_PATH = normalizeBasePath(process.env.SITE_BASE_PATH || '');
+const url = (pathname) => `${BASE_PATH}${pathname.startsWith('/') ? pathname : `/${pathname}`}`;
+
 // ---------- helpers ----------
 
 const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -180,8 +190,8 @@ function navHtml(currentPath = '') {
     const items = catModules
       .map((m) => {
         const firstSection = m.sections[0]?.id || 'overview';
-        const href = `/modules/${m.slug}/${firstSection}.html`;
-        const active = currentPath.startsWith(`/modules/${m.slug}/`)
+        const href = url(`/modules/${m.slug}/${firstSection}.html`);
+        const active = currentPath.startsWith(url(`/modules/${m.slug}/`))
           ? ' class="active"'
           : '';
         return `<li><a${active} href="${href}"><span class="mod-name">${escapeHtml(m.name)}</span><span class="mod-meta">${m.hp} HP</span></a></li>`;
@@ -195,7 +205,7 @@ function navHtml(currentPath = '') {
 
   const pageLinks = pages
     .map((p) => {
-      const href = `/${p.slug}.html`;
+      const href = url(`/${p.slug}.html`);
       const active = currentPath === href ? ' class="active"' : '';
       return `<li><a${active} href="${href}"><span class="mod-name">${escapeHtml(p.title)}</span></a></li>`;
     })
@@ -212,7 +222,7 @@ function moduleSectionTabs(mod, activeSection) {
     ${mod.sections
       .map((s) => {
         const active = s.id === activeSection ? ' aria-current="page"' : '';
-        return `<a${active} href="/modules/${mod.slug}/${s.id}.html">${escapeHtml(s.label)}</a>`;
+        return `<a${active} href="${url(`/modules/${mod.slug}/${s.id}.html`)}">${escapeHtml(s.label)}</a>`;
       })
       .join('')}
   </nav>`;
@@ -253,7 +263,7 @@ function modulePanelGraphic(mod) {
   );
   if (imgExt) {
     return `<div class="module-graphic module-graphic--photo" aria-hidden="true" style="--mod-accent:${accent};--mod-panel:${panel};">
-      <img src="/assets/modules/${mod.slug}.${imgExt}" alt="${escapeHtml(mod.name)} panel" loading="lazy" decoding="async">
+      <img src="${url(`/assets/modules/${mod.slug}.${imgExt}`)}" alt="${escapeHtml(mod.name)} panel" loading="lazy" decoding="async">
     </div>`;
   }
   // Simple stylized "module panel" SVG — abstract, not a literal panel render.
@@ -314,7 +324,7 @@ function modulePanelGraphic(mod) {
 function head(title, description, currentPath) {
   const fullTitle = title === site.title ? title : `${title} — ${site.title}`;
   return `<!doctype html>
-<html lang="en">
+<html lang="en" data-base-path="${escapeHtml(BASE_PATH)}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -326,9 +336,9 @@ function head(title, description, currentPath) {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/base.css" />
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="${url('/base.css')}" />
+  <link rel="stylesheet" href="${url('/style.css')}" />
+  <link rel="icon" href="${url('/assets/favicon.svg')}" type="image/svg+xml" />
 </head>
 <body>`;
 }
@@ -336,7 +346,7 @@ function head(title, description, currentPath) {
 function header(currentPath) {
   return `<a class="sr-only" href="#main">Skip to content</a>
 <header class="site-header">
-  <a class="brand" href="/">
+  <a class="brand" href="${url('/')}">
     <span class="brand-mark">${svgLogo()}</span>
     <span class="brand-text">
       <strong>Modular Field Manual</strong>
@@ -369,7 +379,7 @@ ${header(currentPath)}
   <p>Unofficial documentation. Module names &amp; designs © their respective trademark holders. Text licensed CC BY 4.0.</p>
   <p>Last built ${new Date().toISOString().slice(0, 10)}.</p>
 </footer>
-<script src="/app.js" defer></script>
+<script src="${url('/app.js')}" defer></script>
 </body></html>`;
 }
 
@@ -390,7 +400,7 @@ function renderIndex() {
             .map((m) => {
               const firstSection = m.sections[0]?.id || 'overview';
               return `<li class="module-card" style="--mod-accent:${m.color_accent || '#6db5c8'};" data-manufacturer="${escapeHtml(m.manufacturer || '')}" data-tags="${escapeHtml((m.tags || []).join(' '))}">
-                <a href="/modules/${m.slug}/${firstSection}.html" class="card-link">
+                <a href="${url(`/modules/${m.slug}/${firstSection}.html`)}" class="card-link">
                   <header class="card-head">
                     <h3>${escapeHtml(m.name)}</h3>
                     <span class="card-hp">${m.hp} HP</span>
@@ -421,8 +431,8 @@ function renderIndex() {
         <h1>Reference manuals for the modules on your rails.</h1>
         <p class="hero-lede">${escapeHtml(site.description)}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/modules/${modules[0]?.slug || 'skies'}/overview.html">Browse modules</a>
-          <a class="btn btn-ghost" href="/contributing.html">Add a module →</a>
+          <a class="btn btn-primary" href="${url(`/modules/${modules[0]?.slug || 'skies'}/overview.html`)}">Browse modules</a>
+          <a class="btn btn-ghost" href="${url('/contributing.html')}">Add a module →</a>
         </div>
       </div>
       <div class="hero-meta">
@@ -441,7 +451,7 @@ function renderIndex() {
   return shell(heroBody, {
     title: site.title,
     description: site.description,
-    currentPath: '/',
+    currentPath: url('/'),
     withSidebar: false,
   });
 }
@@ -466,7 +476,7 @@ function renderModuleSection(mod, section) {
         ${modulePanelGraphic(mod)}
       </header>`
     : `<header class="module-mini-hero">
-        <p class="eyebrow"><a href="/modules/${mod.slug}/overview.html">${escapeHtml(mod.name)}</a></p>
+        <p class="eyebrow"><a href="${url(`/modules/${mod.slug}/overview.html`)}">${escapeHtml(mod.name)}</a></p>
         <h1>${escapeHtml(section.title)}</h1>
       </header>`;
 
@@ -474,8 +484,8 @@ function renderModuleSection(mod, section) {
   const body = md(section.bodyMd);
 
   const pager = `<nav class="pager" aria-label="Section navigation">
-    ${prev ? `<a class="pager-prev" href="/modules/${mod.slug}/${prev.id}.html"><span>← Previous</span><strong>${escapeHtml(prev.label)}</strong></a>` : '<span></span>'}
-    ${next ? `<a class="pager-next" href="/modules/${mod.slug}/${next.id}.html"><span>Next →</span><strong>${escapeHtml(next.label)}</strong></a>` : '<span></span>'}
+    ${prev ? `<a class="pager-prev" href="${url(`/modules/${mod.slug}/${prev.id}.html`)}"><span>← Previous</span><strong>${escapeHtml(prev.label)}</strong></a>` : '<span></span>'}
+    ${next ? `<a class="pager-next" href="${url(`/modules/${mod.slug}/${next.id}.html`)}"><span>Next →</span><strong>${escapeHtml(next.label)}</strong></a>` : '<span></span>'}
   </nav>`;
 
   const article = `${hero}
@@ -486,7 +496,7 @@ function renderModuleSection(mod, section) {
   return shell(article, {
     title: `${mod.name} · ${section.label}`,
     description: mod.summary,
-    currentPath: `/modules/${mod.slug}/${section.id}.html`,
+    currentPath: url(`/modules/${mod.slug}/${section.id}.html`),
   });
 }
 
@@ -500,7 +510,7 @@ function renderPage(page) {
   return shell(body, {
     title: page.title,
     description: '',
-    currentPath: `/${page.slug}.html`,
+    currentPath: url(`/${page.slug}.html`),
   });
 }
 
@@ -517,7 +527,7 @@ function buildSearchIndex() {
         manufacturer: m.manufacturer || '',
         tags: (m.tags || []).join(' '),
         section: s.label,
-        url: `/modules/${m.slug}/${s.id}.html`,
+        url: url(`/modules/${m.slug}/${s.id}.html`),
         text: s.rawText.slice(0, 1500),
       });
     }
@@ -530,7 +540,7 @@ function buildSearchIndex() {
       manufacturer: '',
       tags: '',
       section: '',
-      url: `/${p.slug}.html`,
+      url: url(`/${p.slug}.html`),
       text: p.rawText.slice(0, 1500),
     });
   }
