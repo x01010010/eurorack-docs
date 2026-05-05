@@ -1,0 +1,14 @@
+{
+  "slug": "cre8audio-chipz",
+  "name": "CHIPZ",
+  "subtitle": "Dual VCO and LFO",
+  "category": "sound-source",
+  "hp": 12,
+  "manufacturer": "Cre8audio",
+  "released": "2019",
+  "tags": ["oscillator", "vco", "lfo", "dual", "chiptune", "lo-fi", "filter", "waveshaper"],
+  "summary": "A 12 HP dual VCO and dual LFO module inspired by the lo-fi character of classic game consoles. Each oscillator offers five morphable waveforms — Chip1 has an integrated filter, Chip2 has voltage-controlled pulse width. The dual LFO outputs two rates simultaneously (LFO2 runs 4× faster than LFO1), designed to pair with the Cellz touchpad sequencer.",
+  "color_accent": "#e05020",
+  "panel_color": "#1a1a1a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
