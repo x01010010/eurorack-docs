@@ -1,0 +1,15 @@
+{
+  "slug": "behringer-system-100-112",
+  "name": "112",
+  "subtitle": "Dual Analog VCO (System 100)",
+  "category": "sound-source",
+  "hp": 16,
+  "manufacturer": "Behringer",
+  "released": "2020",
+  "inspiration": "Roland System 100M model 112",
+  "tags": ["vco", "analog", "dual", "system-100", "pwm"],
+  "summary": "Two independent analog VCOs in one panel, faithful to the Roland 100M circuit. Each VCO offers triangle, sawtooth, and pulse with PWM, three pitch-CV inputs, dedicated outputs, and weak/strong sync between cores.",
+  "color_accent": "#c8a86d",
+  "panel_color": "#1f1a14",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

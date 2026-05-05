@@ -1,0 +1,15 @@
+{
+  "slug": "behringer-four-play",
+  "name": "FOUR PLAY",
+  "subtitle": "Quad Voltage-Controlled Amplifier",
+  "category": "utility",
+  "hp": 12,
+  "manufacturer": "Behringer",
+  "released": "2023",
+  "inspiration": "Mutable Instruments Quad VCA",
+  "tags": ["vca", "quad", "mixer", "exponential", "linear", "cv"],
+  "summary": "Quad VCA based on Mutable Instruments Quad VCA. Each of four channels has a LEVEL knob, CV attenuator, gain BOOST switch, and EXP/LIN curve selection. CV inputs normalise from the channel above for one-cable control of all four. A MIX output sums all channels for voltage-controlled mixing.",
+  "color_accent": "#c8a06d",
+  "panel_color": "#1a1a14",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

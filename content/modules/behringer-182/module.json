@@ -1,0 +1,15 @@
+{
+  "slug": "behringer-182",
+  "name": "182",
+  "subtitle": "Dual 8/16-Step CV Sequencer (System 100M)",
+  "category": "utility",
+  "hp": 16,
+  "manufacturer": "Behringer",
+  "released": "2021",
+  "inspiration": "Roland System 100M 182",
+  "tags": ["sequencer", "cv", "gate", "roland", "system-100m", "dual-channel"],
+  "summary": "Two-channel 8-step CV sequencer based on the Roland System 100M 182. Both channels run in parallel with independent CV rows, or link in series for a 16-step melody. Internal clock with TEMPO, adjustable GATE TIME, four playback modes, and external clock/reset inputs.",
+  "color_accent": "#c8a86d",
+  "panel_color": "#1f1a14",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

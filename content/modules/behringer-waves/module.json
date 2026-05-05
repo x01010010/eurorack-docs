@@ -1,0 +1,19 @@
+{
+  "slug": "behringer-waves",
+  "name": "WAVES",
+  "subtitle": "Tidal Modulator & Function Generator",
+  "category": "modulation",
+  "hp": 14,
+  "manufacturer": "Behringer",
+  "released": "2024",
+  "inspiration": "Mutable Instruments Tides 2",
+  "tags": ["function-generator", "envelope", "lfo", "vco", "wavefolder"],
+  "summary": "Asymmetric triangle function generator with wavetable shaping, two-pole low-pass, and wavefolder. Operates as AD/AR envelope, looping LFO, or audio-rate digital oscillator with four related outputs and full CV control.",
+  "color_accent": "#8aa5d4",
+  "panel_color": "#1a1f2e",
+  "firmware": [
+    { "version": "1.0", "date": "2018-08" },
+    { "version": "1.1", "date": "2018-10" }
+  ],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

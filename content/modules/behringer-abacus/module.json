@@ -1,0 +1,15 @@
+{
+  "slug": "behringer-abacus",
+  "name": "ABACUS",
+  "subtitle": "Dual Function Generator & Attenuverters",
+  "category": "modulation",
+  "hp": 20,
+  "manufacturer": "Behringer",
+  "released": "2023",
+  "inspiration": "Make Noise Maths",
+  "tags": ["function-generator", "envelope", "lfo", "slew", "attenuverter", "logic", "maths"],
+  "summary": "Dual function generator based on Make Noise Maths. Two voltage-controlled rise/fall generators with independent LIN/LOG/EXP curve switching, four attenuverters, and SUM/OR/INV logic outputs. Each channel operates as an AR envelope, free-running LFO, or slew limiter depending on patching.",
+  "color_accent": "#6880c8",
+  "panel_color": "#1a1a2a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "behringer-system-100-172",
+  "name": "172",
+  "subtitle": "Phase Shifter / Delay / LFO (System 100)",
+  "category": "processor",
+  "hp": 16,
+  "manufacturer": "Behringer",
+  "released": "2020",
+  "inspiration": "Roland System 100M model 172",
+  "tags": ["phaser", "delay", "bbd", "lfo", "gate-delay", "system-100"],
+  "summary": "Four utilities in one panel: a 6-step analog phase shifter, a short BBD analog delay, a triangle LFO, and a gate delay with threshold and time controls. The 100M utility module that solves problems other modules don't.",
+  "color_accent": "#c86db5",
+  "panel_color": "#1f141a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

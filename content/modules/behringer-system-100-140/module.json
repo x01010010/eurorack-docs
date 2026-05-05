@@ -1,0 +1,15 @@
+{
+  "slug": "behringer-system-100-140",
+  "name": "140",
+  "subtitle": "Dual Envelope & LFO (System 100)",
+  "category": "modulation",
+  "hp": 16,
+  "manufacturer": "Behringer",
+  "released": "2022",
+  "inspiration": "Roland System 100M model 140",
+  "tags": ["envelope", "adsr", "lfo", "dual", "system-100"],
+  "summary": "Two independent analog ADSR envelope generators plus a shared LFO with five waveshapes, manual gates, delay, and external trigger. The classic 100M utility — fast envelopes for percussion, smooth ones for pads, and a clock-syncable LFO for everything else.",
+  "color_accent": "#a8c86d",
+  "panel_color": "#1a1f14",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

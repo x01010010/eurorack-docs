@@ -1,0 +1,15 @@
+{
+  "slug": "behringer-radar",
+  "name": "RADAR",
+  "subtitle": "Contact Mic Interface & Envelope Follower",
+  "category": "utility",
+  "hp": 6,
+  "manufacturer": "Behringer",
+  "released": "2023",
+  "inspiration": null,
+  "tags": ["contact-mic", "envelope-follower", "gate", "audio-input", "piezo"],
+  "summary": "Contact microphone interface that converts physical vibrations into Eurorack signals. GAIN knob and attack/decay/sensitivity switches adapt the module to quiet acoustic sources or loud percussion. Three simultaneous outputs: amplified audio, an envelope follower CV (0–10 V), and a gate (0–5 V).",
+  "color_accent": "#a0a0a0",
+  "panel_color": "#1a1a1a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

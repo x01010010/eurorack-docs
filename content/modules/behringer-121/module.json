@@ -1,0 +1,15 @@
+{
+  "slug": "behringer-121",
+  "name": "121",
+  "subtitle": "Dual 24 dB/oct VCF (System 100M)",
+  "category": "processor",
+  "hp": 16,
+  "manufacturer": "Behringer",
+  "released": "2021",
+  "inspiration": "Roland System 100M 121",
+  "tags": ["filter", "vcf", "dual", "lowpass", "highpass", "roland", "system-100m", "24db"],
+  "summary": "Two independent 24 dB/oct voltage-controlled filters based on the Roland System 100M 121. Each channel has three signal inputs with level controls, three modulation inputs, LP/HP switching, and self-oscillation at maximum resonance.",
+  "color_accent": "#c8a86d",
+  "panel_color": "#1f1a14",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

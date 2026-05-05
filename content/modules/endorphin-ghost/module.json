@@ -1,0 +1,15 @@
+{
+  "slug": "endorphin-ghost",
+  "name": "GHOST",
+  "subtitle": "Stereo Multi-FX Processor",
+  "category": "processor",
+  "hp": 16,
+  "manufacturer": "Endorphin.es",
+  "released": "2022",
+  "inspiration": null,
+  "tags": ["reverb", "delay", "filter", "distortion", "compressor", "stereo", "multi-fx", "routing"],
+  "summary": "Stereo multi-effects processor combining delay, reverb, zero-delay-feedback filter, 8× oversampled distortion, compressor, and sidechain ducking — with a single-button routing system to reorder the three main blocks six ways. Developed in collaboration with Andrew Huang.",
+  "color_accent": "#9b7fd4",
+  "panel_color": "#0a0a0a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
