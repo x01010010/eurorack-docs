@@ -373,7 +373,7 @@ function renderIndex() {
           ${catModules
             .map((m) => {
               const firstSection = m.sections[0]?.id || 'overview';
-              return `<li class="module-card" style="--mod-accent:${m.color_accent || '#6db5c8'};">
+              return `<li class="module-card" style="--mod-accent:${m.color_accent || '#6db5c8'};" data-manufacturer="${escapeHtml(m.manufacturer || '')}" data-tags="${escapeHtml((m.tags || []).join(' '))}">
                 <a href="/modules/${m.slug}/${firstSection}.html" class="card-link">
                   <header class="card-head">
                     <h3>${escapeHtml(m.name)}</h3>
@@ -390,6 +390,12 @@ function renderIndex() {
       </section>`;
     })
     .join('');
+
+  const manufacturers = [...new Set(modules.map((m) => m.manufacturer).filter(Boolean))].sort();
+  const filterBar = `<div class="filter-bar" data-filter-bar aria-label="Filter by manufacturer">
+    <button class="filter-pill active" data-filter="">All</button>
+    ${manufacturers.map((mfr) => `<button class="filter-pill" data-filter="${escapeHtml(mfr)}">${escapeHtml(mfr)}</button>`).join('')}
+  </div>`;
 
   const heroBody = `
     <section class="hero">
@@ -411,6 +417,7 @@ function renderIndex() {
       </div>
     </section>
     <section class="catalog">
+      ${filterBar}
       ${cards}
     </section>`;
 
@@ -490,6 +497,8 @@ function buildSearchIndex() {
         id: `${m.slug}/${s.id}`,
         title: `${m.name} · ${s.label}`,
         module: m.name,
+        manufacturer: m.manufacturer || '',
+        tags: (m.tags || []).join(' '),
         section: s.label,
         url: `/modules/${m.slug}/${s.id}.html`,
         text: s.rawText.slice(0, 1500),
@@ -501,6 +510,8 @@ function buildSearchIndex() {
       id: p.slug,
       title: p.title,
       module: '',
+      manufacturer: '',
+      tags: '',
       section: '',
       url: `/${p.slug}.html`,
       text: p.rawText.slice(0, 1500),
