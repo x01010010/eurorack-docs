@@ -1,0 +1,14 @@
+{
+  "slug": "black-dadsr-eg",
+  "name": "BLACK DADSR EG",
+  "subtitle": "Delay-Attack-Decay-Sustain-Release Envelope Generator",
+  "category": "modulation",
+  "hp": 10,
+  "manufacturer": "Erica Synths",
+  "released": "2023",
+  "tags": ["envelope", "eg", "adsr", "dadsr", "gate-delay", "looping", "cv-control"],
+  "summary": "A fully analogue exponential DADSR (Delay-Attack-Decay-Sustain-Release) envelope generator with CV control over every stage. The D stage is an independent gate delay section that holds the gate before the envelope fires, enabling delayed modulation and staggered event design. Includes a looping function and manual gate button.",
+  "color_accent": "#1a6e9f",
+  "panel_color": "#111111",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
