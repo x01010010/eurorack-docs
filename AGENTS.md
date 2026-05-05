@@ -81,7 +81,9 @@ The index page has a row of filter pills — one per unique `manufacturer` value
 
 ### Tag filter
 
-Tag pills on index cards are `<button>` elements (`class="tag-filter-btn"`). Clicking one filters the catalog to modules that share that tag. Clicking the same tag again clears the filter. Tag and manufacturer filters work together with AND logic — selecting a tag resets the manufacturer pill to "All", and vice versa.
+Tag pills on index cards are `<button>` elements (`class="tag-filter-btn"`). Clicking one filters the catalog to modules that share that tag. Clicking the same tag again clears it.
+
+Tag and manufacturer filters are **independent and stack with AND logic** — selecting a tag does not reset the manufacturer pill, and changing manufacturer does not clear the active tag. Example: selecting manufacturer "Behringer" then clicking the "vco" tag shows only Behringer VCOs, not VCOs from other manufacturers.
 
 Tag pills on module detail pages (overview section) are plain `<li>` text — not interactive.
 

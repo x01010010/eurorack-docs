@@ -44,7 +44,7 @@ Create `content/modules/<slug>/` with a `module.json` and one `.md` file per sec
 - **Theme toggle** — dark/light, stored in `localStorage`
 - **Search** — against `search-index.json`; scores title ×10, tag hits ×6, manufacturer +8, body ×1; top 8 results shown
 - **Manufacturer filter** — pill buttons on the index page, one per unique `manufacturer` value across all modules
-- **Tag filter** — tag pills on index cards are `<button>` elements; clicking one filters to modules sharing that tag. Tag and manufacturer filters combine with AND logic.
+- **Tag filter** — tag pills on index cards are `<button>` elements; clicking one filters to modules sharing that tag. Tag and manufacturer filters are independent and stack with AND logic — selecting a tag does not reset the manufacturer, and vice versa.
 
 ### module.json — tags and filtering
 

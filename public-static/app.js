@@ -212,34 +212,28 @@ document.head.appendChild(style);
     document.querySelectorAll('.tag-filter-btn.active').forEach((b) => b.classList.remove('active'));
   }
 
-  // Manufacturer pills
+  // Manufacturer pills — tag filter is preserved across manufacturer changes
   mfrPills.forEach((pill) => {
     pill.addEventListener('click', () => {
       currentMfr = pill.dataset.filter;
-      currentTag = '';
-      clearTagHighlight();
       mfrPills.forEach((p) => p.classList.toggle('active', p === pill));
       apply();
     });
   });
 
-  // Tag buttons (inside cards) — stop propagation so the card link doesn't fire
+  // Tag buttons — manufacturer filter is preserved; filters stack with AND logic
   document.querySelectorAll('.tag-filter-btn').forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
       const tag = btn.dataset.tag;
       if (currentTag === tag) {
-        // Toggle off
         currentTag = '';
         btn.classList.remove('active');
       } else {
         clearTagHighlight();
         currentTag = tag;
         btn.classList.add('active');
-        // Reset manufacturer to All
-        currentMfr = '';
-        mfrPills.forEach((p) => p.classList.toggle('active', p.dataset.filter === ''));
       }
       apply();
     });
