@@ -463,6 +463,7 @@ function renderModuleSection(mod, section) {
   const prev = idx > 0 ? mod.sections[idx - 1] : null;
   const next = idx < mod.sections.length - 1 ? mod.sections[idx + 1] : null;
   const isOverview = idx === 0;
+  const isPanelSection = section.id === 'panel';
 
   const hero = isOverview
     ? `<header class="module-hero">
@@ -472,6 +473,15 @@ function renderModuleSection(mod, section) {
           <p class="module-subtitle">${escapeHtml(mod.subtitle)}</p>
           ${metaStrip(mod)}
           ${tagsHtml(mod.tags)}
+        </div>
+        ${modulePanelGraphic(mod)}
+      </header>`
+    : isPanelSection
+    ? `<header class="module-hero module-hero--panel">
+        <div class="module-hero-text">
+          <p class="eyebrow"><a href="${url(`/modules/${mod.slug}/overview.html`)}">${escapeHtml(mod.name)}</a></p>
+          <h1>${escapeHtml(section.title)}</h1>
+          <p class="module-subtitle">Front panel layout, controls, and I/O reference.</p>
         </div>
         ${modulePanelGraphic(mod)}
       </header>`
