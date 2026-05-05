@@ -1,0 +1,26 @@
+{
+  "slug": "alm-hpo",
+  "name": "HPO",
+  "subtitle": "Headphone Output",
+  "category": "utility",
+  "hp": 2,
+  "manufacturer": "ALM Busy Circuits",
+  "released": "2017",
+  "inspiration": null,
+  "tags": [
+    "output",
+    "headphone",
+    "stereo"
+  ],
+  "summary": "Super-slim 2 HP headphone driver for Eurorack. Takes stereo (or dual mono) inputs, offers a volume knob, and drives a 3.5 mm stereo headphone jack at low noise. Ideal for filling leftover HP in any skiff.",
+  "color_accent": "#c0392b",
+  "panel_color": "#1a1a1a",
+  "sections": [
+    "overview",
+    "panel",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 29644
+}
