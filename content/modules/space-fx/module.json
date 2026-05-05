@@ -1,7 +1,15 @@
 {
-  "name": "Space FX",
-  "manufacturer": "Behringer",
+  "slug": "space-fx",
+  "name": "SPACE FX",
+  "subtitle": "32-Algorithm Stereo Effects Processor",
   "category": "processor",
-  "tags": ["reverb", "delay", "fx", "stereo", "multi-effect"],
+  "hp": 14,
+  "manufacturer": "Behringer",
+  "released": "2023",
+  "inspiration": null,
+  "tags": ["reverb", "delay", "chorus", "flanger", "phaser", "stereo", "multi-effect", "klark-teknik"],
+  "summary": "Stereo multi-effects processor with 32 Klark Teknik DSP algorithms including halls, rooms, plates, spring reverb, shimmer, mono and ping-pong delays, chorus, flanger, and phaser. Mono input, stereo output. PROGRAM knob, two parameter knobs, tap tempo button, and 8-character LED display.",
+  "color_accent": "#6dc8c8",
+  "panel_color": "#1a2a2a",
   "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
 }

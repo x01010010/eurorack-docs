@@ -1,7 +1,15 @@
 {
-  "name": "Victor",
-  "manufacturer": "Behringer",
+  "slug": "victor",
+  "name": "VICTOR",
+  "subtitle": "Quad Vector VCO",
   "category": "sound-source",
-  "tags": ["oscillator", "vco", "vector", "wavetable", "polyphonic", "prophet-vs"],
+  "hp": 14,
+  "manufacturer": "Behringer",
+  "released": "2023",
+  "inspiration": "Sequential Prophet VS",
+  "tags": ["oscillator", "vco", "vector", "wavetable", "polyphonic", "joystick"],
+  "summary": "Quad vector VCO based on the Sequential Prophet VS architecture. Four oscillators each with 128 waveforms blend in a 2D vector space controlled by a joystick or X/Y CV inputs. OLED display shows vector position and waveform names. MIX, X, and Y outputs carry the combined and axis-split signals.",
+  "color_accent": "#c8a82a",
+  "panel_color": "#1a1a12",
   "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
 }

@@ -1,7 +1,15 @@
 {
-  "name": "Halos",
-  "manufacturer": "Behringer",
+  "slug": "halos",
+  "name": "HALOS",
+  "subtitle": "Modal Resonator",
   "category": "processor",
-  "tags": ["resonator", "physical modelling", "modal", "rings", "polyphonic"],
+  "hp": 14,
+  "manufacturer": "Behringer",
+  "released": "2023",
+  "inspiration": "Mutable Instruments Rings",
+  "tags": ["resonator", "physical-modelling", "modal", "polyphonic", "stereo"],
+  "summary": "Modal resonator based on Mutable Instruments Rings. Simulates strings, plates, bowls, and tubes with five resonator types and up to four simultaneous voices. All five parameters are CV-controllable; three outputs (OUT, ODD, EVEN) carry the full signal and odd/even harmonic partials independently.",
+  "color_accent": "#c87870",
+  "panel_color": "#2a1a1a",
   "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
 }

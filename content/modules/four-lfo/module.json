@@ -1,7 +1,15 @@
 {
-  "name": "Four LFO",
-  "manufacturer": "Behringer",
+  "slug": "four-lfo",
+  "name": "FOUR LFO",
+  "subtitle": "Quad LFO with Phase & Divide Modes",
   "category": "modulation",
-  "tags": ["lfo", "quad", "modulation", "batumi"],
+  "hp": 12,
+  "manufacturer": "Behringer",
+  "released": "2023",
+  "inspiration": "Xaoc Devices Batumi",
+  "tags": ["lfo", "quad", "phase", "quadrature", "divide", "modulation"],
+  "summary": "Quad low-frequency oscillator based on Xaoc Devices Batumi. Each of four channels has three simultaneous outputs (sine, assignable, square) and an independent mode switch: free-running, quadrature (90° offsets), user-defined phase offset, or integer rate division of channel 1.",
+  "color_accent": "#b870c8",
+  "panel_color": "#1a1428",
   "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
 }

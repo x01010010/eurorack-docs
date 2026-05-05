@@ -1,7 +1,15 @@
 {
-  "name": "Abacus",
-  "manufacturer": "Behringer",
+  "slug": "abacus",
+  "name": "ABACUS",
+  "subtitle": "Dual Function Generator & Attenuverters",
   "category": "modulation",
-  "tags": ["function generator", "envelope", "lfo", "attenuverter", "logic", "utility"],
+  "hp": 20,
+  "manufacturer": "Behringer",
+  "released": "2023",
+  "inspiration": null,
+  "tags": ["function-generator", "envelope", "lfo", "slew", "attenuverter", "logic"],
+  "summary": "Dual voltage-controlled function generator with independent LIN/LOG/EXP curve switching per channel, plus four attenuverters and SUM/OR/INV logic outputs. Each channel operates as an AR envelope, free-running LFO, or slew limiter depending on patching.",
+  "color_accent": "#6880c8",
+  "panel_color": "#1a1a2a",
   "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
 }
