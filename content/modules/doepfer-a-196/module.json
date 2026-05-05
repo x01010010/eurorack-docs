@@ -6,9 +6,24 @@
   "hp": 8,
   "manufacturer": "Doepfer",
   "released": "2000",
-  "tags": ["pll", "phase-locked-loop", "vco", "experimental", "frequency-multiplier", "clock"],
+  "tags": [
+    "pll",
+    "phase-locked-loop",
+    "vco",
+    "experimental",
+    "frequency-multiplier",
+    "clock"
+  ],
   "summary": "A Phase Locked Loop (PLL) system in 8 HP. Contains an internal linear VCO, three selectable phase comparators (XOR, RS flip-flop, digital memory network), and a low-pass filter, all normalized and patchable independently. Applications include frequency tracking, frequency multiplication, harmonic locking, clock generation, and experimental portamento and jitter effects.",
   "color_accent": "#4a8ab5",
   "panel_color": "#1a1a1a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 136
 }

@@ -6,9 +6,25 @@
   "hp": 3,
   "manufacturer": "Erica Synths",
   "released": "2016",
-  "tags": ["reverb", "delay", "effects", "stereo", "bitcrusher", "granular", "pico-series"],
+  "tags": [
+    "reverb",
+    "delay",
+    "effects",
+    "stereo",
+    "bitcrusher",
+    "granular",
+    "pico-series"
+  ],
   "summary": "Eight custom stereo effects in 3 HP. Covers mono delay, pitch-shift delay, stereo delay, granular delay, reverb, saturated reverb, Leslie speaker simulation, and overdrive/bitcrush. Each effect has two adjustable parameters; the first parameter is CV-controllable. Dry/wet mix and colour-coded effect selection.",
   "color_accent": "#4a9fd4",
   "panel_color": "#111111",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 9886
 }

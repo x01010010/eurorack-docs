@@ -7,9 +7,25 @@
   "manufacturer": "Erica Synths",
   "released": "2018",
   "inspiration": null,
-  "tags": ["lfo", "phase", "modulation", "sync", "multi-output", "waveform", "quadrature"],
+  "tags": [
+    "lfo",
+    "phase",
+    "modulation",
+    "sync",
+    "multi-output",
+    "waveform",
+    "quadrature"
+  ],
   "summary": "12 HP LFO with 8 simultaneous outputs. In Single mode each output carries the same waveform phase-shifted 45° apart; in Multi mode all 8 waveforms appear across the outputs simultaneously. Rate, waveform, and phase are all CV controllable with external clock sync.",
   "color_accent": "#e04040",
   "panel_color": "#0a0a0a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 10361
 }

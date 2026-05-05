@@ -7,9 +7,24 @@
   "manufacturer": "Erica Synths",
   "released": "2018",
   "inspiration": null,
-  "tags": ["trigger", "clock", "sequencer", "polyrhythm", "pattern", "digital"],
+  "tags": [
+    "trigger",
+    "clock",
+    "sequencer",
+    "polyrhythm",
+    "pattern",
+    "digital"
+  ],
   "summary": "3 HP master clock and polyrhythmic pattern generator with 4 trigger outputs, 8 pattern memory slots, adjustable shuffle, and a web-based pattern design interface. Patterns upload via the CLK jack.",
   "color_accent": "#e04040",
   "panel_color": "#0a0a0a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 8468
 }

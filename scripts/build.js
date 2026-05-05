@@ -246,6 +246,16 @@ function metaStrip(mod) {
 function modulePanelGraphic(mod) {
   const accent = mod.color_accent || '#6db5c8';
   const panel = mod.panel_color || '#1a1f2e';
+  // Check for a real panel image in public/assets/modules/<slug>.<ext>
+  const imgExts = ['jpg', 'jpeg', 'png', 'webp', 'avif'];
+  const imgExt = imgExts.find((ext) =>
+    exists(path.join(PUBLIC, 'assets', 'modules', `${mod.slug}.${ext}`)),
+  );
+  if (imgExt) {
+    return `<div class="module-graphic module-graphic--photo" aria-hidden="true" style="--mod-accent:${accent};--mod-panel:${panel};">
+      <img src="/assets/modules/${mod.slug}.${imgExt}" alt="${escapeHtml(mod.name)} panel" loading="lazy" decoding="async">
+    </div>`;
+  }
   // Simple stylized "module panel" SVG — abstract, not a literal panel render.
   // 6 jacks, 3 knob circles, 4 tiny LEDs. Fits the column.
   return `<div class="module-graphic" aria-hidden="true" style="--mod-accent:${accent};--mod-panel:${panel};">

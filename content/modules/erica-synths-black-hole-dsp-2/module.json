@@ -7,9 +7,25 @@
   "manufacturer": "Erica Synths",
   "released": "2019",
   "inspiration": null,
-  "tags": ["reverb", "delay", "chorus", "stereo", "dsp", "fv-1", "multi-effect"],
+  "tags": [
+    "reverb",
+    "delay",
+    "chorus",
+    "stereo",
+    "dsp",
+    "fv-1",
+    "multi-effect"
+  ],
   "summary": "Stereo multi-effects processor built around the Spin Semiconductor FV-1 DSP. Sixteen factory programs span reverbs, delays, chorus, flanger, and pitch effects; sixteen user slots accept custom FV-1 programs uploaded via the PROG jack. Three parameter knobs (P1–P3) are all CV-controllable.",
   "color_accent": "#e04040",
   "panel_color": "#0a0a0a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 16020
 }

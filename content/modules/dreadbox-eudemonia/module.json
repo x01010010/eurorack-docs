@@ -6,9 +6,24 @@
   "hp": 10,
   "manufacturer": "Dreadbox",
   "released": "2019",
-  "tags": ["filter", "vcf", "vca", "mixer", "low-pass", "high-pass"],
+  "tags": [
+    "filter",
+    "vcf",
+    "vca",
+    "mixer",
+    "low-pass",
+    "high-pass"
+  ],
   "summary": "Analog signal processor in 10 HP combining a 3-to-1 mixer, dual series filters (24 dB resonant low-pass + 18 dB non-resonant high-pass), and an exponential VCA with peak indicator. LED indicators display the CV sum for each section. Part of the Dreadbox Chromatic Modules series.",
   "color_accent": "#5b9e4a",
   "panel_color": "#1a1a1a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 23982
 }

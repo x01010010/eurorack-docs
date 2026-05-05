@@ -6,9 +6,26 @@
   "hp": 4,
   "manufacturer": "Doepfer",
   "released": "2024",
-  "tags": ["filter", "vcf", "multimode", "low-pass", "high-pass", "band-pass", "notch", "wasp"],
+  "tags": [
+    "filter",
+    "vcf",
+    "multimode",
+    "low-pass",
+    "high-pass",
+    "band-pass",
+    "notch",
+    "wasp"
+  ],
   "summary": "Slim 4 HP version of the A-124 Wasp filter. A 12 dB multimode filter based on the EDP Wasp synthesizer circuit, which uses digital inverters (CD4069) as op-amps for a characteristically dirty, warm sound. Bandpass and a jumper-selectable LP or HP output alongside the LP/HP mix output. No self-oscillation.",
   "color_accent": "#c8a020",
   "panel_color": "#111111",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 49100
 }

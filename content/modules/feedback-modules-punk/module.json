@@ -6,9 +6,23 @@
   "hp": 6,
   "manufacturer": "Feedback Modules",
   "released": "2024",
-  "tags": ["distortion", "fuzz", "saturation", "eq", "processor"],
+  "tags": [
+    "distortion",
+    "fuzz",
+    "saturation",
+    "eq",
+    "processor"
+  ],
   "summary": "Compact 6 HP distortion module with two distinct flavors: a fat 80s-inspired FET preamp and a switchable guitar pedal fuzz (diode or MOSFET). Individual gain controls, Baxandall two-band EQ, input level, and clean/distorted blend—serious tone shaping in minimal space.",
   "color_accent": "#b84d4d",
   "panel_color": "#1a1a1a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 38061
 }

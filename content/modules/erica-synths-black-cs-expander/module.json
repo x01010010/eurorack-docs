@@ -7,9 +7,24 @@
   "manufacturer": "Erica Synths",
   "released": "2018",
   "inspiration": null,
-  "tags": ["expander", "envelope", "autobend", "noise", "chiptune", "digital"],
+  "tags": [
+    "expander",
+    "envelope",
+    "autobend",
+    "noise",
+    "chiptune",
+    "digital"
+  ],
   "summary": "Expander for the Black Code Source. Adds an autobend (attack envelope) for the Code Source's internal clock pitch, additional noise/CV modes via an alternative mode switch, a clock output, and an envelope output. Requires ribbon cable connection to the Code Source — not standalone.",
   "color_accent": "#e04040",
   "panel_color": "#0a0a0a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 16656
 }

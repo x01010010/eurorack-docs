@@ -7,9 +7,26 @@
   "manufacturer": "Erica Synths",
   "released": "2018",
   "inspiration": null,
-  "tags": ["noise", "random", "cv", "digital", "polynomial", "sample-hold", "bitcrush", "generative"],
+  "tags": [
+    "noise",
+    "random",
+    "cv",
+    "digital",
+    "polynomial",
+    "sample-hold",
+    "bitcrush",
+    "generative"
+  ],
   "summary": "Stereo digital noise and dual random CV generator based on polynomial feedback calculations. X and Y knobs select from 16×16 polynomial combinations; S sets the sequence start point; RATE sweeps from slow dual CV at low values to raw digital noise at high values. Over 4,000 sequences per mode across three modes.",
   "color_accent": "#e04040",
   "panel_color": "#0a0a0a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 16655
 }

@@ -7,9 +7,24 @@
   "manufacturer": "Erica Synths",
   "released": "2023",
   "inspiration": null,
-  "tags": ["envelope", "adsr", "looping", "lfo", "gate-length", "analog"],
+  "tags": [
+    "envelope",
+    "adsr",
+    "looping",
+    "lfo",
+    "gate-length",
+    "analog"
+  ],
   "summary": "Re-triggerable exponential ADSR envelope generator with adjustable gate length, CV-controlled gate time, and full ADSR looping mode. Generates complete envelopes from short triggers without an external gate source.",
   "color_accent": "#e04040",
   "panel_color": "#0a0a0a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 43924
 }

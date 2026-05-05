@@ -7,9 +7,26 @@
   "manufacturer": "Behringer",
   "released": "2021",
   "inspiration": "Roland System 100M 150",
-  "tags": ["ring-modulator", "noise", "sample-hold", "lfo", "roland", "system-100m", "white-noise", "pink-noise"],
+  "tags": [
+    "ring-modulator",
+    "noise",
+    "sample-hold",
+    "lfo",
+    "roland",
+    "system-100m",
+    "white-noise",
+    "pink-noise"
+  ],
   "summary": "Four-section utility based on the Roland System 100M 150. A ring modulator, dual white/pink noise sources (two outputs each), a sample-and-hold with external or internal clock, and a five-waveform LFO — all independent and usable simultaneously.",
   "color_accent": "#c8a86d",
   "panel_color": "#1f1a14",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 16881
 }

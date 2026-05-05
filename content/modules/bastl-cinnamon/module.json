@@ -6,9 +6,26 @@
   "hp": 5,
   "manufacturer": "Bastl Instruments",
   "released": "2015",
-  "tags": ["filter", "vcf", "svf", "state-variable", "low-pass", "high-pass", "band-pass", "self-oscillating"],
+  "tags": [
+    "filter",
+    "vcf",
+    "svf",
+    "state-variable",
+    "low-pass",
+    "high-pass",
+    "band-pass",
+    "self-oscillating"
+  ],
   "summary": "A 5 HP voltage-controlled state variable filter with simultaneous LP, BP, and HP outputs. Features a drive switch for input saturation, character switches that alter resonance behaviour and self-oscillation waveform, a V/Oct input, and full self-oscillation capability producing sine waves at 0°, 90°, and 180° at the three outputs.",
   "color_accent": "#c87820",
   "panel_color": "#2a2a2a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 6002
 }

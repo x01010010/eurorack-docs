@@ -7,9 +7,24 @@
   "manufacturer": "Behringer",
   "released": "2025",
   "inspiration": "Mutable Instruments Blades",
-  "tags": ["filter", "vcf", "stereo", "wavefolder", "drive", "blades"],
+  "tags": [
+    "filter",
+    "vcf",
+    "stereo",
+    "wavefolder",
+    "drive",
+    "blades"
+  ],
   "summary": "Two 12 dB state-variable filters built around the V2164 chip — the same design Émilie Gillet used in Blades. Continuously morphing low/band/high response, drive that runs from soft clipping to two-stage wavefolding, CV-controllable routing from single to parallel to series, and a SHIFT button that locks the two cutoffs together.",
   "color_accent": "#7d6dc8",
   "panel_color": "#1a141f",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 51773
 }

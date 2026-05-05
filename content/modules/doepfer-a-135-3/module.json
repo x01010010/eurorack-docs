@@ -5,9 +5,23 @@
   "category": "utility",
   "hp": 8,
   "manufacturer": "Doepfer",
-  "tags": ["mixer", "stereo", "vca", "cv", "dc-coupled"],
+  "tags": [
+    "mixer",
+    "stereo",
+    "vca",
+    "cv",
+    "dc-coupled"
+  ],
   "summary": "Four-input voltage-controlled stereo mixer built around eight linear CEM3360/AS3360 VCAs in 8 HP. Each channel has a level knob, a CV input with attenuator, and independent left and right signal inputs. DC coupled throughout — usable for audio and CV mixing alike. Multiple units can be chained master/slave for more than four channels.",
   "color_accent": "#888888",
   "panel_color": "#1a1a1a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 27510
 }

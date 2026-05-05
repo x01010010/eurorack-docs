@@ -6,9 +6,23 @@
   "hp": 10,
   "manufacturer": "Erica Synths",
   "released": "2017",
-  "tags": ["mixer", "stereo", "panning", "cv", "performance"],
+  "tags": [
+    "mixer",
+    "stereo",
+    "panning",
+    "cv",
+    "performance"
+  ],
   "summary": "Compact 10 HP stereo mixer with four inputs, designed for setups with stereo modules. Three stereo inputs with ganged L/R volume control, one mono input with CV-controlled panning, selectable +6 dB boost on two channels, L/R channel merge on two inputs, and signal level LEDs.",
   "color_accent": "#e04040",
   "panel_color": "#0a0a0a",
-  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 9450
 }

@@ -5,7 +5,8 @@
   "main": "scripts/build.js",
   "scripts": {
     "build": "node scripts/build.js",
-    "serve": "python3 -m http.server 4321 --directory public"
+    "serve": "python3 -m http.server 4321 --directory public",
+    "fetch-images": "node scripts/fetch-images.js"
   },
   "keywords": [],
   "author": "",
