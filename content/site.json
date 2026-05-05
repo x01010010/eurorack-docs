@@ -6,7 +6,8 @@
     { "id": "sound-source", "label": "Sound Sources" },
     { "id": "modulation", "label": "Modulation & Function" },
     { "id": "processor", "label": "Processors & Effects" },
-    { "id": "utility", "label": "Utility" }
+    { "id": "utility", "label": "Utility" },
+    { "id": "sequencer", "label": "Sequencers" }
   ],
   "sections": [
     { "id": "overview", "label": "Overview" },

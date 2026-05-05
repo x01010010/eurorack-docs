@@ -2,7 +2,7 @@
   "slug": "cre8audio-programm",
   "name": "PROGRAMM",
   "subtitle": "12-channel MIDI & CV sequencer",
-  "category": "sound-source",
+  "category": "sequencer",
   "hp": 40,
   "manufacturer": "Cre8audio",
   "released": "2024",
