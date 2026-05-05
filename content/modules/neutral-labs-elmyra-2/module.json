@@ -1,0 +1,15 @@
+{
+  "slug": "neutral-labs-elmyra-2",
+  "name": "ELMYRA 2",
+  "subtitle": "4-Voice Microtonal Drone Synthesizer",
+  "category": "sound-source",
+  "hp": 42,
+  "manufacturer": "Neutral Labs",
+  "released": "2023",
+  "inspiration": null,
+  "tags": ["drone", "wavetable", "digital", "four-voice", "sequencer", "microtonal", "semi-modular", "effects"],
+  "summary": "A 4-voice digital/analog hybrid drone synthesizer and platform for microtonal sonic exploration. Wavetable oscillator engine, 31 modulation targets, 41 patch points, polymetric sequencers, switchable multi-mode filter, delay, lo-fi reverb, and an analog OUCH distortion circuit. Available as a 42 HP Eurorack module or standalone desktop synth.",
+  "color_accent": "#5a7ea8",
+  "panel_color": "#1a1a1a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
