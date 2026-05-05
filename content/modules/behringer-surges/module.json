@@ -11,9 +11,9 @@
     "filter",
     "vcf",
     "multimode",
-    "lowpass",
-    "bandpass",
-    "highpass",
+    "low-pass",
+    "band-pass",
+    "high-pass",
     "self-oscillating",
     "v-per-oct"
   ],

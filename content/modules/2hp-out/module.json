@@ -5,6 +5,7 @@
   "category": "utility",
   "hp": 2,
   "manufacturer": "2hp",
+  "inspiration": null,
   "tags": [
     "output",
     "headphone",
@@ -12,7 +13,7 @@
     "stereo",
     "vu-meter"
   ],
-  "summary": "Compact 2 HP stereo output module with independent line and headphone outputs. Accepts modular-level stereo inputs, converts to line level, and drives a 3.5 mm headphone jack — both with individual volume controls. Left and right LED VU meters for level monitoring.",
+  "summary": "Compact 2 HP stereo output module with independent line and headphone outputs. Accepts modular-level stereo inputs, converts to line level, and drives a 3.5 mm headphone jack \u2014 both with individual volume controls. Left and right LED VU meters for level monitoring.",
   "color_accent": "#cccccc",
   "panel_color": "#111111",
   "sections": [

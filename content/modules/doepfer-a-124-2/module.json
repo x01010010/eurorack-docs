@@ -5,6 +5,7 @@
   "category": "processor",
   "hp": 4,
   "manufacturer": "Doepfer",
+  "inspiration": null,
   "released": "2024",
   "tags": [
     "filter",

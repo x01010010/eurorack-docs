@@ -11,8 +11,8 @@
     "filter",
     "vcf",
     "dual",
-    "lowpass",
-    "highpass",
+    "low-pass",
+    "high-pass",
     "roland",
     "system-100m",
     "24db"
