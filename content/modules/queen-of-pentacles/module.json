@@ -1,0 +1,15 @@
+{
+  "slug": "queen-of-pentacles",
+  "name": "QUEEN OF PENTACLES",
+  "subtitle": "7-Voice Hybrid Drum Synthesizer",
+  "category": "sound-source",
+  "hp": 30,
+  "manufacturer": "Endorphin.es",
+  "released": "2020",
+  "inspiration": "Roland TR-909",
+  "tags": ["drums", "hybrid", "analog", "samples", "tr-909", "percussion", "multi-voice", "sd-card"],
+  "summary": "Seven-voice hybrid drum module with 3 discrete analog voices (bass drum, snare, clap) and 4 zero-latency sample channels from SD card. Includes a 16-effect onboard processor, master LP/HP isolator filter, individual outputs, accent/velocity inputs, and clockable rolls per channel.",
+  "color_accent": "#9b7fd4",
+  "panel_color": "#0a0a0a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

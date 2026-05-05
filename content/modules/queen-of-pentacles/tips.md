@@ -1,0 +1,10 @@
+# Tips & Tricks
+
+- **Spoiler knob for character** — the noise spectrum control on BD, SD, and CP is easy to overlook but dramatically changes the character of the analog voices. Low settings give clean, tight transients; high settings add gritty, lo-fi texture. Treat it like a tone control specific to the noise component.
+- **Individual outs pull from the mix** — as soon as you patch a cable into any individual output, that voice is removed from the stereo master mix. Always patch individual outs intentionally; you'll notice a voice disappearing from the main mix if you accidentally leave a cable in.
+- **S1/S2 and S3/S4 share output pairs** — the four sample channels don't have fully individual outs; S1 and S2 share a stereo pair, as do S3 and S4. Plan your external routing around this — e.g. put your hi-hats on S1/S2 for a shared output to your hi-hat channel.
+- **Firmware updates via AUX IN** — to update firmware, connect your device's audio output to AUX IN and play the firmware audio file at full volume. The module processes it like a pattern upload. Check the Endorphin.es site for the latest firmware audio file.
+- **Hold TAP for global wet FX** — when you want everything soaked in reverb or delay for a breakdown or transition, hold TAP for one second. All channel effect switches are overridden globally. Release and hold again to return to individual switch settings.
+- **Accent as humanisation** — even a subtle random CV (from a sample-and-hold or probabilistic source) into an ACCENT IN jack adds velocity variation that makes rigid sequences sound more organic.
+- **Ring modulator on snare** — try Darkwaves effect 5 (Ring Modulator) on the snare channel with CABIN PRESSURE around 30–50% wet. Even light amounts of ring modulation give snare a metallic, industrial quality that's difficult to achieve any other way.
+- **Use AUX IN as a reverb send** — route the output of an external synth into AUX IN and dial in hall reverb. The Queen of Pentacles effectively becomes a dedicated reverb module for the rest of your rack when you're not using the effect on internal voices.
