@@ -26,7 +26,7 @@ Single build script (`scripts/build.js`) that:
 ### Content Structure
 
 - `content/site.json` — defines categories and the ordered list of section IDs/labels
-- `content/modules/<slug>/module.json` — module manifest (name, hp, category, tags, sections list)
+- `content/modules/<slug>/module.json` — module manifest (name, subtitle, hp, category, manufacturer, released, inspiration, tags, summary, color_accent, panel_color, sections)
 - `content/modules/<slug>/<section-id>.md` — one markdown file per section listed in the manifest
 - `content/pages/<slug>.md` — standalone pages (about, contributing)
 

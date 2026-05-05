@@ -35,25 +35,47 @@ No tests or linter configured. Always run `npm run build` after content changes 
 ```jsonc
 {
   "slug": "my-module",          // must match folder name exactly
-  "name": "MY MODULE",          // uppercase display name
+  "name": "MY MODULE",          // see Naming Conventions below
   "subtitle": "One-line descriptor",
-  "category": "sound-source",   // must match an id in site.json categories
+  "category": "sound-source",   // see Valid Categories below
   "hp": 12,                     // integer
-  "manufacturer": "Acme",
-  "released": "2024",
-  "tags": ["oscillator"],
-  "summary": "1–3 sentences.",
-  "color_accent": "#6db5c8",    // optional hex
-  "panel_color": "#1a1a1a",     // optional hex
+  "manufacturer": "Acme",       // drives manufacturer filter pill
+  "released": "2024",           // displayed in module hero meta strip
+  "inspiration": "Make Noise Maths", // displayed as "Based on:" — use null if original
+  "tags": ["oscillator"],       // hyphenated lowercase — drives tag filter and search
+  "summary": "1–3 sentences.",  // shown on index card and used as page meta description
+  "color_accent": "#6db5c8",    // tints the module card border and panel graphic accent
+  "panel_color": "#1a1a1a",     // fills the panel graphic background
   "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
 }
 ```
+
+### Valid Categories
+
+Must match an `id` in `content/site.json`:
+
+| id | Label |
+|----|-------|
+| `sound-source` | Sound Sources |
+| `modulation` | Modulation & Function |
+| `processor` | Processors & Effects |
+| `utility` | Utility |
 
 ### Standard Sections
 
 `overview` · `panel` · `modes` · `patching` · `specs` · `tips`
 
 Modules may omit any section by excluding it from the `sections` array.
+
+### Naming Conventions
+
+Follow the pattern established by the existing modules:
+
+- **Most modules**: ALL CAPS — `BRAINS`, `HALOS`, `SKIES`, `BLACK LPG`, `PICO TRIGGER`
+- **Roland System 100M clones**: numeric only — `112`, `121`, `140`, `150`, `172`, `173`, `182`
+- **Third-party original names**: preserve the manufacturer's capitalisation — `A-135-3` (Doepfer), `BITBOX MK2` (1010music)
+
+When in doubt, use ALL CAPS.
 
 ## Markdown Conventions
 
