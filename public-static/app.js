@@ -191,7 +191,8 @@ document.head.appendChild(style);
   const bar = document.querySelector('[data-filter-bar]');
   if (!bar) return;
 
-  const mfrPills = Array.from(bar.querySelectorAll('.filter-pill'));
+  const mfrPills = Array.from(bar.querySelectorAll('.filter-pill:not([data-tag-clear])'));
+  const tagClearBtn = bar.querySelector('[data-tag-clear]');
   const cards = Array.from(document.querySelectorAll('.module-card'));
   const sections = Array.from(document.querySelectorAll('.cat-section'));
   let currentMfr = '';
@@ -208,8 +209,17 @@ document.head.appendChild(style);
     });
   }
 
-  function clearTagHighlight() {
+  function setTag(tag) {
+    currentTag = tag;
     document.querySelectorAll('.tag-filter-btn.active').forEach((b) => b.classList.remove('active'));
+    if (tag) {
+      // Highlight every matching tag button across all cards
+      document.querySelectorAll(`.tag-filter-btn[data-tag="${CSS.escape(tag)}"]`).forEach((b) => b.classList.add('active'));
+      tagClearBtn.textContent = `× ${tag}`;
+      tagClearBtn.hidden = false;
+    } else {
+      tagClearBtn.hidden = true;
+    }
   }
 
   // Manufacturer pills — tag filter is preserved across manufacturer changes
@@ -221,20 +231,18 @@ document.head.appendChild(style);
     });
   });
 
+  // Global tag clear chip
+  tagClearBtn.addEventListener('click', () => {
+    setTag('');
+    apply();
+  });
+
   // Tag buttons — manufacturer filter is preserved; filters stack with AND logic
   document.querySelectorAll('.tag-filter-btn').forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      const tag = btn.dataset.tag;
-      if (currentTag === tag) {
-        currentTag = '';
-        btn.classList.remove('active');
-      } else {
-        clearTagHighlight();
-        currentTag = tag;
-        btn.classList.add('active');
-      }
+      setTag(currentTag === btn.dataset.tag ? '' : btn.dataset.tag);
       apply();
     });
   });

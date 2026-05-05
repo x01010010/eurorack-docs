@@ -397,6 +397,7 @@ function renderIndex() {
   const filterBar = `<div class="filter-bar" data-filter-bar aria-label="Filter by manufacturer">
     <button class="filter-pill active" data-filter="">All</button>
     ${manufacturers.map((mfr) => `<button class="filter-pill" data-filter="${escapeHtml(mfr)}">${escapeHtml(mfr)}</button>`).join('')}
+    <button class="filter-pill tag-active-pill" data-tag-clear hidden aria-label="Clear tag filter"></button>
   </div>`;
 
   const heroBody = `
