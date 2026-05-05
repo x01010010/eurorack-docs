@@ -557,9 +557,10 @@ body {
 }
 
 .panel-content-media {
-  height: 200px;
+  height: 120px;
   max-width: 860px;
   width: 100%;
+  overflow: hidden;
 }
 
 .panel-content-media .module-graphic {
@@ -568,10 +569,15 @@ body {
   place-items: center;
 }
 
+.panel-content-media .module-graphic--photo {
+  height: 100%;
+  overflow: hidden;
+}
+
 .panel-content-media .module-graphic--photo img {
   height: 100%;
   width: 100%;
-  max-height: none;
+  max-height: 100%;
 }
 
 .panel-content-prose {
@@ -790,7 +796,7 @@ body {
   .hero { grid-template-columns: 1fr; gap: var(--space-8); }
   .module-hero { grid-template-columns: 1fr; gap: var(--space-6); }
   .panel-content-layout { gap: var(--space-5); }
-  .panel-content-media { height: 200px; }
+  .panel-content-media { height: 120px; }
   .module-graphic { max-width: 240px; }
 }
 
