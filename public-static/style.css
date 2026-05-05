@@ -554,12 +554,13 @@ body {
   grid-template-columns: 1fr;
   gap: var(--space-6);
   align-items: start;
+  justify-items: start;
 }
 
 .panel-content-media {
   height: 120px;
-  max-width: 860px;
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -576,8 +577,9 @@ body {
 
 .panel-content-media .module-graphic--photo img {
   height: 100%;
-  width: 100%;
+  width: auto;
   max-height: 100%;
+  max-width: 100%;
 }
 
 .panel-content-prose {
