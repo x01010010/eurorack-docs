@@ -1,0 +1,7 @@
+{
+  "name": "Chaos",
+  "manufacturer": "Behringer",
+  "category": "modulation",
+  "tags": ["random", "sample and hold", "gate", "marbles", "generative"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

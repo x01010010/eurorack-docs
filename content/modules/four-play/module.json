@@ -1,0 +1,7 @@
+{
+  "name": "Four Play",
+  "manufacturer": "Behringer",
+  "category": "utility",
+  "tags": ["vca", "quad", "mixer", "amplifier", "cv"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

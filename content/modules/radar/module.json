@@ -1,0 +1,7 @@
+{
+  "name": "Radar",
+  "manufacturer": "Behringer",
+  "category": "utility",
+  "tags": ["contact mic", "envelope follower", "gate", "audio", "input"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

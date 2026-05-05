@@ -115,11 +115,12 @@ const moduleSlugs = fs
   .filter((f) => fs.statSync(path.join(modulesDir, f)).isDirectory())
   .sort();
 
-const modules = moduleSlugs.map((slug) => {
+const modules = moduleSlugs.flatMap((slug) => {
   const dir = path.join(modulesDir, slug);
   const manifestPath = path.join(dir, 'module.json');
   if (!exists(manifestPath)) {
-    throw new Error(`Missing module.json in ${dir}`);
+    console.warn(`! ${slug}: missing module.json, skipping`);
+    return [];
   }
   const manifest = readJson(manifestPath);
   manifest.slug = manifest.slug || slug;

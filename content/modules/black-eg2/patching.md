@@ -12,9 +12,9 @@ Patch a stepped CV source (sequencer, sample-and-hold) into GL CV. Each trigger 
 
 Engage LOOP on one channel. Set ATTACK and RELEASE to different medium values, DECAY short, SUSTAIN at about 60%. The output is an asymmetric waveform with a different character than triangle or saw LFOs. Patch it into a filter cutoff or oscillator pitch for organic modulation.
 
-## Dual Envelope on One Voice
+## Split Envelope Duties with a Second Module
 
-Use channel 1 as a VCA envelope (short attack, moderate decay, medium sustain, moderate release) and channel 2 as a filter envelope (longer attack, longer decay, low sustain, long release). Trigger both from the same gate. The voice gets a natural feel — amplitude is snappy while the filter opens slowly.
+Pair **BLACK EG2** with a second envelope generator. Use this module as a VCA envelope (short attack, moderate decay, medium sustain, moderate release) and the second as a filter envelope (longer attack, longer decay, low sustain, long release). Trigger both from the same gate. The voice gets a natural feel — amplitude is snappy while the filter opens slowly.
 
 ## Rhythmic Retriggering
 

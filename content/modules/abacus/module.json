@@ -1,0 +1,7 @@
+{
+  "name": "Abacus",
+  "manufacturer": "Behringer",
+  "category": "modulation",
+  "tags": ["function generator", "envelope", "lfo", "attenuverter", "logic", "utility"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

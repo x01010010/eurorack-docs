@@ -1,0 +1,7 @@
+{
+  "name": "121",
+  "manufacturer": "Behringer",
+  "category": "processor",
+  "tags": ["filter", "vcf", "dual", "lowpass", "highpass", "roland", "system-100m"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

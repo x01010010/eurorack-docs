@@ -1,0 +1,7 @@
+{
+  "name": "Space FX",
+  "manufacturer": "Behringer",
+  "category": "processor",
+  "tags": ["reverb", "delay", "fx", "stereo", "multi-effect"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

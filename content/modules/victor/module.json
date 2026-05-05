@@ -1,0 +1,7 @@
+{
+  "name": "Victor",
+  "manufacturer": "Behringer",
+  "category": "sound-source",
+  "tags": ["oscillator", "vco", "vector", "wavetable", "polyphonic", "prophet-vs"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

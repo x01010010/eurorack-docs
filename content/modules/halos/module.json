@@ -1,0 +1,7 @@
+{
+  "name": "Halos",
+  "manufacturer": "Behringer",
+  "category": "processor",
+  "tags": ["resonator", "physical modelling", "modal", "rings", "polyphonic"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

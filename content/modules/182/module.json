@@ -1,0 +1,7 @@
+{
+  "name": "182",
+  "manufacturer": "Behringer",
+  "category": "utility",
+  "tags": ["sequencer", "cv", "gate", "roland", "system-100m"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

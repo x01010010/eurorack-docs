@@ -1,0 +1,7 @@
+{
+  "name": "Brains",
+  "manufacturer": "Behringer",
+  "category": "sound-source",
+  "tags": ["oscillator", "vco", "wavetable", "fm", "multi-engine"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

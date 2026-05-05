@@ -1,0 +1,7 @@
+{
+  "name": "Surges",
+  "manufacturer": "Behringer",
+  "category": "processor",
+  "tags": ["filter", "vcf", "multimode", "lowpass", "bandpass", "highpass", "ripples"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

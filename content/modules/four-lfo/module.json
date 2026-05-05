@@ -1,0 +1,7 @@
+{
+  "name": "Four LFO",
+  "manufacturer": "Behringer",
+  "category": "modulation",
+  "tags": ["lfo", "quad", "modulation", "batumi"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

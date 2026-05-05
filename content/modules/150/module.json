@@ -1,0 +1,7 @@
+{
+  "name": "150",
+  "manufacturer": "Behringer",
+  "category": "modulation",
+  "tags": ["ring modulator", "noise", "sample and hold", "lfo", "roland", "system-100m"],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
