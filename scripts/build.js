@@ -477,13 +477,12 @@ function renderModuleSection(mod, section) {
         ${modulePanelGraphic(mod)}
       </header>`
     : isPanelSection
-    ? `<header class="module-hero module-hero--panel">
+    ? `<header class="module-mini-hero module-mini-hero--panel">
         <div class="module-hero-text">
           <p class="eyebrow"><a href="${url(`/modules/${mod.slug}/overview.html`)}">${escapeHtml(mod.name)}</a></p>
           <h1>${escapeHtml(section.title)}</h1>
           <p class="module-subtitle">Front panel layout, controls, and I/O reference.</p>
         </div>
-        ${modulePanelGraphic(mod)}
       </header>`
     : `<header class="module-mini-hero">
         <p class="eyebrow"><a href="${url(`/modules/${mod.slug}/overview.html`)}">${escapeHtml(mod.name)}</a></p>
@@ -492,6 +491,12 @@ function renderModuleSection(mod, section) {
 
   const tabs = moduleSectionTabs(mod, section.id);
   const body = md(section.bodyMd);
+  const panelBody = `<section class="panel-content-layout">
+    <aside class="panel-content-media" aria-label="${escapeHtml(mod.name)} panel image">
+      ${modulePanelGraphic(mod)}
+    </aside>
+    <article class="prose panel-content-prose">${body}</article>
+  </section>`;
 
   const pager = `<nav class="pager" aria-label="Section navigation">
     ${prev ? `<a class="pager-prev" href="${url(`/modules/${mod.slug}/${prev.id}.html`)}"><span>← Previous</span><strong>${escapeHtml(prev.label)}</strong></a>` : '<span></span>'}
@@ -500,7 +505,7 @@ function renderModuleSection(mod, section) {
 
   const article = `${hero}
     ${tabs}
-    <article class="prose">${body}</article>
+    ${isPanelSection ? panelBody : `<article class="prose">${body}</article>`}
     ${pager}`;
 
   return shell(article, {
