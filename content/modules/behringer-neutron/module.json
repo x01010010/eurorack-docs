@@ -1,0 +1,33 @@
+{
+  "slug": "behringer-neutron",
+  "name": "NEUTRON",
+  "subtitle": "Paraphonic Semi-Modular Synthesizer",
+  "category": "sound-source",
+  "hp": 80,
+  "manufacturer": "Behringer",
+  "released": "2018",
+  "inspiration": null,
+  "tags": [
+    "semi-modular",
+    "paraphonic",
+    "oscillator",
+    "vcf",
+    "bbd-delay",
+    "overdrive",
+    "sample-hold",
+    "midi",
+    "synth-voice"
+  ],
+  "summary": "Paraphonic semi-modular synthesizer built around two CEM3340-based analog oscillators, a self-oscillating 12 dB/oct multimode VCF, dual ADSR generators, BBD analog delay, overdrive, noise, LFO, sample-and-hold, and a comprehensive patchbay with 32 inputs and 24 outputs. Internally normalled for immediate play; fully reroutable via patch cables.",
+  "color_accent": "#c87820",
+  "panel_color": "#1a1a1a",
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 15681
+}
