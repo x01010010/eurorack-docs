@@ -533,6 +533,7 @@ body {
   margin-bottom: 2px;
 }
 .meta-strip dd { color: var(--color-text); font-size: 0.9rem; }
+.meta-strip .meta-date { color: var(--color-text-faint); font-size: 0.8rem; }
 
 .module-graphic {
   background: var(--mod-panel, var(--color-surface));

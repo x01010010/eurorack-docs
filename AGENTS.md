@@ -46,6 +46,10 @@ No tests or linter configured. Always run `npm run build` after content changes 
   "summary": "1–3 sentences.",  // shown on index card and used as page meta description
   "color_accent": "#6db5c8",    // tints the module card border and panel graphic accent
   "panel_color": "#1a1a1a",     // fills the panel graphic background
+  "firmware": [                 // optional; omit for analog modules
+    { "version": "1.0", "date": "2018-03" },
+    { "version": "1.1", "date": "2019-02" }
+  ],
   "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
 }
 ```
@@ -76,6 +80,16 @@ Follow the pattern established by the existing modules:
 - **Third-party original names**: preserve the manufacturer's capitalisation — `A-135-3` (Doepfer), `BITBOX MK2` (1010music)
 
 When in doubt, use ALL CAPS.
+
+### Firmware field
+
+The optional `firmware` array lists firmware versions in chronological order (oldest first). Each entry has:
+- `version` — version string (e.g. `"1.2"`)
+- `date` — release date as `"YYYY-MM"` (month precision)
+
+The build renders the **latest** entry (last in the array) as a "Firmware" row in the module overview meta strip. For Behringer modules based on Mutable Instruments designs, these are the open-source MI firmware versions; the hardware can run official MI firmware updates.
+
+Omit the field entirely for analog-only modules where firmware is not applicable.
 
 ## Markdown Conventions
 

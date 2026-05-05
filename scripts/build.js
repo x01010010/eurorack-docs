@@ -228,11 +228,15 @@ function tagsHtml(tags = [], filterable = false) {
 }
 
 function metaStrip(mod) {
+  const latestFirmware = mod.firmware?.length
+    ? mod.firmware[mod.firmware.length - 1]
+    : null;
   const items = [
     mod.manufacturer && `<dt>Maker</dt><dd>${escapeHtml(mod.manufacturer)}</dd>`,
     mod.released && `<dt>Released</dt><dd>${escapeHtml(String(mod.released))}</dd>`,
     `<dt>Width</dt><dd>${mod.hp} HP</dd>`,
     mod.inspiration && `<dt>Based on</dt><dd>${escapeHtml(mod.inspiration)}</dd>`,
+    latestFirmware && `<dt>Firmware</dt><dd>${escapeHtml(latestFirmware.version)}${latestFirmware.date ? ` <span class="meta-date">(${escapeHtml(latestFirmware.date)})</span>` : ''}</dd>`,
   ]
     .filter(Boolean)
     .join('');

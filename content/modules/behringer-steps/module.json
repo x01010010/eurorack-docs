@@ -1,0 +1,19 @@
+{
+  "slug": "behringer-steps",
+  "name": "STEPS",
+  "subtitle": "Six-Stage Function Generator",
+  "category": "modulation",
+  "hp": 14,
+  "manufacturer": "Behringer",
+  "released": "2025",
+  "inspiration": "Mutable Instruments Stages",
+  "tags": ["envelope", "lfo", "sequencer", "function-generator", "multi-stage", "chainable"],
+  "summary": "Six-stage function generator that reconfigures itself based on patching. Unpatched stages group together into multi-stage envelopes; individually patched stages become single-segment envelopes, LFOs, or step sequencer stages. Up to six modules can be chained for 36-stage sequences or envelopes.",
+  "color_accent": "#6db5c8",
+  "panel_color": "#1a2332",
+  "firmware": [
+    { "version": "1.0", "date": "2018-06" },
+    { "version": "1.1", "date": "2019-01" }
+  ],
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

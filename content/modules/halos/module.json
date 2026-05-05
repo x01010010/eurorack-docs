@@ -11,5 +11,10 @@
   "summary": "Modal resonator based on Mutable Instruments Rings. Simulates strings, plates, bowls, and tubes with five resonator types and up to four simultaneous voices. All five parameters are CV-controllable; three outputs (OUT, ODD, EVEN) carry the full signal and odd/even harmonic partials independently.",
   "color_accent": "#c87870",
   "panel_color": "#2a1a1a",
+  "firmware": [
+    { "version": "1.0", "date": "2015-11" },
+    { "version": "1.1", "date": "2016-04" },
+    { "version": "1.2", "date": "2017-10" }
+  ],
   "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
 }
