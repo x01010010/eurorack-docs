@@ -1,0 +1,16 @@
+{
+  "slug": "cre8audio-programm",
+  "name": "PROGRAMM",
+  "subtitle": "12-channel MIDI & CV sequencer",
+  "category": "sound-source",
+  "hp": 40,
+  "manufacturer": "Cre8audio",
+  "released": "2024",
+  "inspiration": null,
+  "tags": ["sequencer", "midi", "clock-generator", "random"],
+  "summary": "An intuitive 12-channel MIDI and CV sequencer designed to be the beating heart of any electronic music setup. Bridges modular synthesis with MIDI control.",
+  "modulargrid_id": 57921,
+  "color_accent": "#00d9ff",
+  "panel_color": "#0a0e27",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
