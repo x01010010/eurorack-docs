@@ -563,7 +563,9 @@ body {
   width: fit-content;
   max-width: 100%;
   overflow: visible;
-  position: relative;
+  position: sticky;
+  top: calc(var(--header-h) + var(--space-4));
+  z-index: 2;
 }
 
 .panel-content-media .module-graphic {
@@ -827,7 +829,7 @@ body {
   .hero { grid-template-columns: 1fr; gap: var(--space-8); }
   .module-hero { grid-template-columns: 1fr; gap: var(--space-6); }
   .panel-content-layout { gap: var(--space-5); }
-  .panel-content-media { max-height: 120px; }
+  .panel-content-media { max-height: 120px; position: static; }
   .module-graphic { max-width: 240px; }
   .panel-image-magnifier {
     left: 0;
