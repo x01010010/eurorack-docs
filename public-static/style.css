@@ -557,7 +557,7 @@ body {
 }
 
 .panel-content-media {
-  height: clamp(280px, 46vh, 420px);
+  height: 200px;
   max-width: 860px;
   width: 100%;
 }
@@ -790,9 +790,7 @@ body {
   .hero { grid-template-columns: 1fr; gap: var(--space-8); }
   .module-hero { grid-template-columns: 1fr; gap: var(--space-6); }
   .panel-content-layout { gap: var(--space-5); }
-  .panel-content-media {
-    height: clamp(220px, 40vh, 320px);
-  }
+  .panel-content-media { height: 200px; }
   .module-graphic { max-width: 240px; }
 }
 
