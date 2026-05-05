@@ -1,0 +1,34 @@
+{
+  "slug": "behringer-model-d",
+  "name": "MODEL D",
+  "subtitle": "Analog Synthesizer Voice (Moog Model D Clone)",
+  "category": "sound-source",
+  "hp": 70,
+  "manufacturer": "Behringer",
+  "released": "2017",
+  "inspiration": "Moog Model D (Minimoog)",
+  "tags": [
+    "semi-modular",
+    "oscillator",
+    "ladder-filter",
+    "vcf",
+    "lfo",
+    "overdrive",
+    "midi",
+    "poly-chain",
+    "synth-voice",
+    "clone"
+  ],
+  "summary": "A faithful reproduction of the classic Moog Model D (Minimoog) architecture in Eurorack format. Three analog VCOs with five waveforms, a 24 dB/oct ladder filter with resonance, overdrive, a triangle/square LFO, dual ADSR envelopes, external audio input, and 16-voice MIDI poly chain. Eurorack-compatible with full patch point access.",
+  "color_accent": "#d4a020",
+  "panel_color": "#1c1a14",
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 10848
+}
