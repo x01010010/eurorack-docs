@@ -558,28 +558,30 @@ body {
 }
 
 .panel-content-media {
-  height: 120px;
+  height: auto;
+  max-height: 120px;
   width: fit-content;
   max-width: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .panel-content-media .module-graphic {
-  height: 100%;
+  height: auto;
   display: grid;
   place-items: center;
 }
 
 .panel-content-media .module-graphic--photo {
-  height: 100%;
-  overflow: hidden;
+  height: auto;
+  overflow: visible;
 }
 
 .panel-content-media .module-graphic--photo img {
-  height: 100%;
+  height: auto;
   width: auto;
-  max-height: 100%;
+  max-height: 120px;
   max-width: 100%;
+  object-fit: contain;
 }
 
 .panel-content-prose {
@@ -798,7 +800,7 @@ body {
   .hero { grid-template-columns: 1fr; gap: var(--space-8); }
   .module-hero { grid-template-columns: 1fr; gap: var(--space-6); }
   .panel-content-layout { gap: var(--space-5); }
-  .panel-content-media { height: 120px; }
+  .panel-content-media { max-height: 120px; }
   .module-graphic { max-width: 240px; }
 }
 
