@@ -196,12 +196,13 @@ document.head.appendChild(style);
   const cards = Array.from(document.querySelectorAll('.module-card'));
   const sections = Array.from(document.querySelectorAll('.cat-section'));
   let currentMfr = '';
-  let currentTag = '';
+  let selectedTags = [];
 
   function apply() {
     cards.forEach((card) => {
       const mfrOk = !currentMfr || card.dataset.manufacturer === currentMfr;
-      const tagOk = !currentTag || card.dataset.tags.split(' ').includes(currentTag);
+      const cardTags = card.dataset.tags.split(' ');
+      const tagOk = selectedTags.length === 0 || selectedTags.every((t) => cardTags.includes(t));
       card.hidden = !(mfrOk && tagOk);
     });
     sections.forEach((sec) => {
@@ -209,13 +210,12 @@ document.head.appendChild(style);
     });
   }
 
-  function setTag(tag) {
-    currentTag = tag;
-    document.querySelectorAll('.tag-filter-btn.active').forEach((b) => b.classList.remove('active'));
-    if (tag) {
-      // Highlight every matching tag button across all cards
-      document.querySelectorAll(`.tag-filter-btn[data-tag="${CSS.escape(tag)}"]`).forEach((b) => b.classList.add('active'));
-      tagClearBtn.textContent = `× ${tag}`;
+  function updateTagButtons() {
+    document.querySelectorAll('.tag-filter-btn').forEach((b) => {
+      b.classList.toggle('active', selectedTags.includes(b.dataset.tag));
+    });
+    if (selectedTags.length > 0) {
+      tagClearBtn.textContent = `× ${selectedTags.join(', ')}`;
       tagClearBtn.hidden = false;
     } else {
       tagClearBtn.hidden = true;
@@ -233,16 +233,23 @@ document.head.appendChild(style);
 
   // Global tag clear chip
   tagClearBtn.addEventListener('click', () => {
-    setTag('');
+    selectedTags = [];
+    updateTagButtons();
     apply();
   });
 
-  // Tag buttons — manufacturer filter is preserved; filters stack with AND logic
+  // Tag buttons — manufacturer filter is preserved; multiple tags can be selected with AND logic
   document.querySelectorAll('.tag-filter-btn').forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      setTag(currentTag === btn.dataset.tag ? '' : btn.dataset.tag);
+      const tag = btn.dataset.tag;
+      if (selectedTags.includes(tag)) {
+        selectedTags = selectedTags.filter((t) => t !== tag);
+      } else {
+        selectedTags.push(tag);
+      }
+      updateTagButtons();
       apply();
     });
   });
