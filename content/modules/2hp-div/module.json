@@ -1,0 +1,13 @@
+{
+  "slug": "2hp-div",
+  "name": "DIV",
+  "subtitle": "Voltage Controlled Clock Divider & Multiplier",
+  "category": "utility",
+  "hp": 2,
+  "manufacturer": "2hp",
+  "tags": ["clock", "divider", "multiplier", "cv", "rhythmic", "dual-channel"],
+  "summary": "Dual-channel voltage-controlled clock divider and multiplier in 2 HP. Each channel divides or multiplies an incoming clock by 1, 2, 3, 4, 5, 6, 7, 8, or 16, with a rate knob and CV input per channel. Two rhythmically independent outputs from a single clock.",
+  "color_accent": "#cccccc",
+  "panel_color": "#111111",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

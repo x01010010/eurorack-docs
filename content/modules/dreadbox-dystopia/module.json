@@ -1,0 +1,14 @@
+{
+  "slug": "dreadbox-dystopia",
+  "name": "DYSTOPIA",
+  "subtitle": "Noise, Bit Crusher & Filter",
+  "category": "processor",
+  "hp": 10,
+  "manufacturer": "Dreadbox",
+  "released": "2019",
+  "tags": ["noise", "filter", "bitcrusher", "random", "distortion"],
+  "summary": "Noise processor combining six noise types, a bit crusher, a random gate generator, and dual parallel 12 dB low-pass and high-pass filters in 10 HP. An external input replaces the internal noise source, turning it into a crusher-filter for any signal. LED indicators display the CV sum for each section.",
+  "color_accent": "#7a1ab5",
+  "panel_color": "#1a1a1a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

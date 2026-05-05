@@ -1,0 +1,14 @@
+{
+  "slug": "nostalgia",
+  "name": "NOSTALGIA",
+  "subtitle": "3-Stage Hybrid Delay",
+  "category": "processor",
+  "hp": 10,
+  "manufacturer": "Dreadbox",
+  "released": "2019",
+  "tags": ["delay", "echo", "lfo", "feedback", "stereo-outs"],
+  "summary": "Three bucket-brigade delay circuits wired in series, derived from the Erebus synthesizer's echo section. Voltage-controlled delay time from 30 ms to 1 s, a built-in LFO for warbling modulation, dual feedback loops, intermediate tap outputs, and a dedicated instrument-level input for direct guitar or keyboard use.",
+  "color_accent": "#c87b3a",
+  "panel_color": "#1c1410",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "black-stereo-reverb",
+  "name": "BLACK STEREO REVERB",
+  "subtitle": "Hi-Fi Stereo Reverb Processor",
+  "category": "processor",
+  "hp": 12,
+  "manufacturer": "Erica Synths",
+  "released": "2023",
+  "tags": ["reverb", "stereo", "freeze", "effects", "preset", "cv", "black-series"],
+  "summary": "High-fidelity stereo reverb in 12 HP built on Erica Synths' custom DSP engine with algorithms developed by 112dB. Three reverb sources (Tape, BBD, dirty BBD) each in Room, Hall, and Cathedral sizes. Features manual and CV-triggered Freeze, adjustable stereo spin, CV over size, feedback, tone, and preset selection, and 10 saveable presets.",
+  "color_accent": "#4a7ab5",
+  "panel_color": "#0a0a0a",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

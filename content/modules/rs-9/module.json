@@ -1,0 +1,15 @@
+{
+  "slug": "rs-9",
+  "name": "RS-9",
+  "subtitle": "Rhythm Sequencer & Trigger Brain",
+  "category": "utility",
+  "hp": 52,
+  "manufacturer": "Behringer",
+  "released": "2024",
+  "inspiration": "RD-9 sequencer engine in Eurorack form",
+  "tags": ["sequencer", "rhythm", "trigger", "midi", "usb-c"],
+  "summary": "10-track step sequencer with up to 64 steps per track. Each track outputs trigger and accent CV, plus a global pitch/CV out, MIDI DIN, USB-C, and clock I/O. Memory for 256 patterns and 16 songs, with probability, swing, ratchets, flam, note repeat, and polyrhythms.",
+  "color_accent": "#d97a4a",
+  "panel_color": "#1a1a1f",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}

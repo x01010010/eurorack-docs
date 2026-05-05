@@ -1,0 +1,14 @@
+{
+  "slug": "bitbox-mk2",
+  "name": "BITBOX MK2",
+  "subtitle": "Intuitive Sampling Module",
+  "category": "processor",
+  "hp": 26,
+  "manufacturer": "1010music",
+  "released": "2020",
+  "tags": ["sampler", "looper", "granular", "clip-launcher", "touchscreen", "midi", "streaming"],
+  "summary": "Full-featured Eurorack sampler with a 3.5-inch touchscreen. Records, plays back, slices, loops, and granularizes samples up to 4 GB streamed from microSD. 16 clip slots, stereo I/O, 8 CV inputs, MIDI in/out, and a slot-launching grid interface. Also runs fxbox (effects) and synthbox (wavetable) firmware.",
+  "color_accent": "#3a7fc8",
+  "panel_color": "#1a1a2e",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
