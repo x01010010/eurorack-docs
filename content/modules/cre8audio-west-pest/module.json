@@ -1,0 +1,33 @@
+{
+  "slug": "cre8audio-west-pest",
+  "name": "WEST PEST",
+  "subtitle": "West Coast Semi-Modular Synthesizer",
+  "category": "sound-source",
+  "hp": 40,
+  "manufacturer": "Cre8audio",
+  "released": "2022",
+  "inspiration": null,
+  "tags": [
+    "semi-modular",
+    "west-coast",
+    "wavefolder",
+    "oscillator",
+    "lpg",
+    "sequencer",
+    "midi",
+    "lfo",
+    "synth-voice"
+  ],
+  "summary": "A fully analog west coast-style semi-modular synthesizer designed in partnership with Pittsburgh Modular. Built around a Pittsburgh-designed oscillator and wavefolder, a Buchla-inspired Dynamics Controller (combined filter/VCA/EG), an LFO, a multi-mod tool, MIDI-to-CV, a step sequencer, and a button keyboard — all with 18 Eurorack-compatible patch points.",
+  "color_accent": "#e8a030",
+  "panel_color": "#1a1a1a",
+  "sections": [
+    "overview",
+    "panel",
+    "modes",
+    "patching",
+    "specs",
+    "tips"
+  ],
+  "modulargrid_id": 39174
+}
