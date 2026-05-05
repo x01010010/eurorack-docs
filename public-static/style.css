@@ -588,7 +588,8 @@ body {
 
 .panel-image-magnifier {
   position: absolute;
-  left: calc(100% + var(--space-3));
+  right: calc(100% + var(--space-3));
+  left: auto;
   top: 0;
   width: min(460px, 60vw);
   aspect-ratio: 4 / 3;
@@ -830,6 +831,7 @@ body {
   .module-graphic { max-width: 240px; }
   .panel-image-magnifier {
     left: 0;
+    right: auto;
     top: calc(100% + var(--space-3));
     width: min(460px, 90vw);
   }
