@@ -1,0 +1,14 @@
+{
+  "slug": "black-ring-xfade",
+  "name": "BLACK RING-XFADE",
+  "subtitle": "Dual Ring Modulator / Waveshaper / Crossfader / VCA",
+  "category": "processor",
+  "hp": 10,
+  "manufacturer": "Erica Synths",
+  "released": "2018",
+  "tags": ["ring-modulator", "waveshaper", "crossfader", "vca", "amplitude-modulation"],
+  "summary": "A 10 HP amplitude modulation powerplant combining two unconventional ring modulators/waveshapers, a voltage-controlled crossfader, and a VCA in a single module. Unlike conventional ring modulators, it passes signal unaltered with no carrier present; low carrier levels produce unique waveshaping. AC/DC coupling is selectable on the crossfader; the VCA has a selectable bias.",
+  "color_accent": "#1a6e9f",
+  "panel_color": "#111111",
+  "sections": ["overview", "panel", "modes", "patching", "specs", "tips"]
+}
