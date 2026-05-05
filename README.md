@@ -10,6 +10,18 @@ npm run serve        # Serve /public on http://localhost:4321
 npm run fetch-images # Download panel photos from ModularGrid
 ```
 
+## Hosting
+
+The site is deployed with GitHub Pages using a GitHub Actions workflow:
+
+- Workflow: [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml)
+- Trigger: every push to `main` (and manual `workflow_dispatch`)
+- Build output: `public/`
+
+Published URL:
+
+- `https://x01010010.github.io/eurorack-docs/`
+
 ## Adding a Module
 
 1. Create `content/modules/<slug>/` (lowercase, hyphenated slug)
